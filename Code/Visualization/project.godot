@@ -10,19 +10,23 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Panel",
-"class": "InteractivePanel",
+"class": "GridPanel",
 "language": "GDScript",
-"path": "res://InteractivePanel.gd"
+"path": "res://grid/GridPanel.gd"
 } ]
 _global_script_class_icons={
-"InteractivePanel": ""
+"GridPanel": ""
 }
 
 [application]
 
 config/name="IEQ2 Kinect 2"
-run/main_scene="res://MainPanel.tscn"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+KinectHandler="*res://kinect/KinectHandler.cs"
 
 [display]
 

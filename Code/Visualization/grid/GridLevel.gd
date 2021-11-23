@@ -6,7 +6,7 @@ func _set_animation_factor(new_animation_factor: float) -> void:
 	animation_factor = new_animation_factor
 	
 	for child in get_children():
-		var panel := child as InteractivePanel
+		var panel := child as GridPanel
 		panel.animation_factor = animation_factor
 
 
@@ -14,7 +14,7 @@ func _assert_panels() -> void:
 	var positions := PoolVector2Array([])
 	
 	for child in get_children():
-		var panel := child as InteractivePanel
+		var panel := child as GridPanel
 		var _panel_name := panel.name
 		
 		assert(int(panel.rect_position.x) % 60 == 0)
