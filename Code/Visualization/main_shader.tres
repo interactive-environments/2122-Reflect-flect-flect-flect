@@ -6,7 +6,8 @@
 
 [resource]
 shader = ExtResource( 1 )
-shader_param/blur_amount = 10.0
+shader_param/blur = true
+shader_param/bg_effect_amount = 3.704
 shader_param/shadow_amount = 10
 shader_param/width = 5.0
 shader_param/bg_tex = ExtResource( 3 )

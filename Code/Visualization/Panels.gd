@@ -4,18 +4,18 @@ extends Node2D
 var active := false
 var active_index := 0
 
-var blur_amount := 10.0
+var effect_amount := 10.0
 
 
 # -
 func _process(_delta: float) -> void:
-	var new_blur_amount = lerp(blur_amount, 0.0 if active else 4.0, 0.1)
+	var new_effect_amount = lerp(effect_amount, 0.0 if active else 4.0, 0.1)
 	
-	if blur_amount != new_blur_amount:
-		blur_amount = new_blur_amount
+	if effect_amount != new_effect_amount:
+		effect_amount = new_effect_amount
 		
-		#var material: ShaderMaterial = $"../../../ViewportContainer".material
-		#material.set_shader_param("blur_amount", blur_amount)
+		var material: ShaderMaterial = $"../../../ViewportContainer".material
+		material.set_shader_param("bg_effect_amount", effect_amount)
 	
 	$"../Grid".modulate.a = lerp($"../Grid".modulate.a, 0.0 if active else 1.0, 0.1)
 

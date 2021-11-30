@@ -1,6 +1,8 @@
 shader_type canvas_item;
 
-uniform float blur_amount : hint_range(0, 10) = 0;
+uniform bool blur = false;
+
+uniform float bg_effect_amount : hint_range(0, 10) = 0;
 
 uniform int shadow_amount : hint_range(0, 10) = 15;
 
@@ -40,26 +42,36 @@ void fragment() {
 	vec4 fg_color = texture(fg_tex, UV);
 	vec4 bg_color = texture(bg_tex, UV);
 	
-	int iblur_amount = int(blur_amount);
+	int i_bg_effect_amount = int(bg_effect_amount);
 	
-	if (iblur_amount != 0) {
-		bg_color = vec4(0, 0, 0, 0);
-		
-		// sum the pixels colors
-		for(int x=-iblur_amount; x <= iblur_amount; x++) {
-			for(int y = -iblur_amount; y <= iblur_amount; y++) {
-				
-				// get the pixel coordinates at offset (x, y)
-				vec2 coordinate = UV + vec2(float(x), float(y)) * TEXTURE_PIXEL_SIZE;
-				
-				// sum the color
-				bg_color += texture(bg_tex, coordinate);
+	if (bg_effect_amount > 0.125) {
+		if (blur) {
+			bg_color = vec4(0, 0, 0, 0);
+			
+			// sum the pixels colors
+			for(int x=-i_bg_effect_amount; x <= i_bg_effect_amount; x++) {
+				for(int y = -i_bg_effect_amount; y <= i_bg_effect_amount; y++) {
+					
+					// get the pixel coordinates at offset (x, y)
+					vec2 coordinate = UV + vec2(float(x), float(y)) * TEXTURE_PIXEL_SIZE;
+					
+					// sum the color
+					bg_color += texture(bg_tex, coordinate);
+				}
 			}
+			
+			// divide the color by the number of colors you sumed up
+			int num_neighbours = (i_bg_effect_amount * 2 + 1) * (i_bg_effect_amount * 2 + 1);
+			bg_color /= float(num_neighbours);
 		}
-
-		// divide the color by the number of colors you sumed up
-		int num_neighbours = (iblur_amount * 2 + 1) * (iblur_amount * 2 + 1);
-		bg_color /= float(num_neighbours);
+		else {
+			vec2 pixel_uv = (floor((UV / bg_effect_amount) / TEXTURE_PIXEL_SIZE) * TEXTURE_PIXEL_SIZE) * bg_effect_amount;
+			bg_color = texture(bg_tex, pixel_uv);
+		}
+		
+		// darken the background
+		bg_color /= 1.0 + (0.125 * bg_effect_amount);
+		bg_color.a = 1.0;
 	}
 	
 	for (int i = 0; i <= shadow_amount; i++) {
@@ -70,9 +82,6 @@ void fragment() {
 			bg_color.a = 1.0;
 		}
 	}
-	
-	bg_color /= 1.0 + (0.125 * blur_amount);
-	bg_color.a = 1.0;
 	
 	//COLOR = active ? fg_color : bg_color;
 	COLOR = mix(bg_color, fg_color, a);
