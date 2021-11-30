@@ -2423,6 +2423,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 640, 480 )
+
 [node name="HSlider" type="HSlider" parent="."]
 margin_left = 487.0
 margin_top = 818.0
@@ -2437,6 +2440,8 @@ value = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Node2D" type="Node2D" parent="."]
 
 [connection signal="toggled" from="Panel/CheckBox" to="Panel/KinectViewer" method="_on_CheckBox_toggled"]
 [connection signal="value_changed" from="HSlider" to="Grid" method="_on_HSlider_value_changed"]

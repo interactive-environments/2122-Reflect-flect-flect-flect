@@ -15,7 +15,7 @@ onready var start_size := rect_size
 func _ready() -> void:
 	# add sprite
 	if not get_node_or_null("Content"):
-		var new_sprite: = preload("res://Sprite.tscn").instance()
+		var new_sprite: = preload("res://grid/Sprite.tscn").instance()
 		add_child(new_sprite)
 	
 	var level := int(get_parent().name.right(5))
