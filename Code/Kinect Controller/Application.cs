@@ -5,6 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
+Console.WriteLine(@"    ____  ______________    __________________
+   / __ \/ ____/ ____/ /   / ____/ ____/_  __/ 
+  / /_/ / __/ / /_  / /   / __/ / /     / /     
+ / _, _/ /___/ __/ / /___/ /___/ /___  / /     
+/_/ |_/_____/_/   /_____/_____/\____/ /_/ -flect-flect-flect
+                                              
+Kinect Controller");
+
 // Find the first connected sensor
 using var sensor = KinectSensor.KinectSensors.First(sensor => sensor.Status == KinectStatus.Connected);
 
