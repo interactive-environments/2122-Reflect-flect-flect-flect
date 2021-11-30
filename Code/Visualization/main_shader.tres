@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=2]
 
 [ext_resource path="res://grid/GridShader.gdshader" type="Shader" id=1]
-[ext_resource path="res://images/cover.png" type="Texture" id=2]
+[ext_resource path="res://images/cover3.png" type="Texture" id=2]
 [ext_resource path="res://images/cover2.png" type="Texture" id=3]
 
 [resource]

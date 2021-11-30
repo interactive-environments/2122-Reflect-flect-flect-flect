@@ -15,6 +15,8 @@ func _ready() -> void:
 
 # -
 func _process(_delta: float) -> void:
+	modulate.a = lerp(modulate.a, float(active), 0.15)
+	
 	var scale := rect_scale.x
 	var target_scale := 1.0 if active else 0.0
 	
