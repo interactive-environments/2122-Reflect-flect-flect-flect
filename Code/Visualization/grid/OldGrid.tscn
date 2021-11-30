@@ -1,0 +1,1218 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://grid/Element.gd" type="Script" id=1]
+[ext_resource path="res://grid/element.png" type="Texture" id=2]
+
+[node name="Grid" type="Node2D"]
+
+[node name="Element" type="TextureRect" parent="."]
+margin_right = 144.0
+margin_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element2" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_right = 192.0
+margin_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element3" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_right = 240.0
+margin_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element4" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_right = 288.0
+margin_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element5" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 48.0
+margin_right = 192.0
+margin_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element6" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 48.0
+margin_right = 240.0
+margin_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element7" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 48.0
+margin_right = 288.0
+margin_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element8" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 192.0
+margin_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element9" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 96.0
+margin_right = 240.0
+margin_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element10" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 96.0
+margin_right = 288.0
+margin_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element11" type="TextureRect" parent="."]
+margin_top = 96.0
+margin_right = 48.0
+margin_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element12" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 96.0
+margin_right = 96.0
+margin_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element13" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 96.0
+margin_right = 144.0
+margin_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element14" type="TextureRect" parent="."]
+margin_top = 144.0
+margin_right = 48.0
+margin_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element15" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 144.0
+margin_right = 96.0
+margin_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element16" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 144.0
+margin_right = 144.0
+margin_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element17" type="TextureRect" parent="."]
+margin_top = 192.0
+margin_right = 48.0
+margin_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element18" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 192.0
+margin_right = 96.0
+margin_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element19" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 192.0
+margin_right = 144.0
+margin_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element20" type="TextureRect" parent="."]
+margin_top = 240.0
+margin_right = 48.0
+margin_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element21" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 240.0
+margin_right = 96.0
+margin_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element22" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 240.0
+margin_right = 144.0
+margin_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element23" type="TextureRect" parent="."]
+margin_top = 288.0
+margin_right = 48.0
+margin_bottom = 336.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element24" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 288.0
+margin_right = 96.0
+margin_bottom = 336.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element25" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 288.0
+margin_right = 144.0
+margin_bottom = 336.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element26" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 144.0
+margin_right = 288.0
+margin_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element27" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 240.0
+margin_right = 288.0
+margin_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element28" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 240.0
+margin_right = 192.0
+margin_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element29" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 288.0
+margin_right = 192.0
+margin_bottom = 336.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element30" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 336.0
+margin_right = 192.0
+margin_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element31" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 384.0
+margin_right = 192.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element32" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 432.0
+margin_right = 192.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element33" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 480.0
+margin_right = 192.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element34" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 240.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element35" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 432.0
+margin_right = 240.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element36" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 480.0
+margin_right = 240.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element37" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 384.0
+margin_right = 288.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element38" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 432.0
+margin_right = 288.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element39" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 480.0
+margin_right = 288.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element40" type="TextureRect" parent="."]
+margin_top = 336.0
+margin_right = 144.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element41" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 384.0
+margin_right = 192.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element42" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 432.0
+margin_right = 192.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element43" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 480.0
+margin_right = 192.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element44" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 384.0
+margin_right = 240.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element45" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 432.0
+margin_right = 240.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element46" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 480.0
+margin_right = 240.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element47" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 384.0
+margin_right = 288.0
+margin_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element48" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 432.0
+margin_right = 288.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element49" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 480.0
+margin_right = 288.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element50" type="TextureRect" parent="."]
+margin_top = 432.0
+margin_right = 48.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element51" type="TextureRect" parent="."]
+margin_top = 480.0
+margin_right = 48.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element52" type="TextureRect" parent="."]
+margin_top = 528.0
+margin_right = 48.0
+margin_bottom = 576.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element53" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 432.0
+margin_right = 96.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element54" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 480.0
+margin_right = 96.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element55" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 528.0
+margin_right = 96.0
+margin_bottom = 576.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element56" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 432.0
+margin_right = 144.0
+margin_bottom = 480.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element57" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 480.0
+margin_right = 144.0
+margin_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element58" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 528.0
+margin_right = 144.0
+margin_bottom = 576.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element59" type="TextureRect" parent="."]
+margin_top = 576.0
+margin_right = 48.0
+margin_bottom = 624.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element60" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 576.0
+margin_right = 96.0
+margin_bottom = 624.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element61" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 576.0
+margin_right = 144.0
+margin_bottom = 624.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element62" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 528.0
+margin_right = 288.0
+margin_bottom = 624.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element63" type="TextureRect" parent="."]
+margin_top = 624.0
+margin_right = 96.0
+margin_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element64" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 624.0
+margin_right = 144.0
+margin_bottom = 672.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element65" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 672.0
+margin_right = 144.0
+margin_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element66" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 720.0
+margin_right = 144.0
+margin_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element67" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 624.0
+margin_right = 192.0
+margin_bottom = 672.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element68" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 672.0
+margin_right = 192.0
+margin_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element69" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 720.0
+margin_right = 192.0
+margin_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element70" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 624.0
+margin_right = 240.0
+margin_bottom = 672.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element71" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 672.0
+margin_right = 240.0
+margin_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element72" type="TextureRect" parent="."]
+margin_left = 192.0
+margin_top = 720.0
+margin_right = 240.0
+margin_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element73" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 624.0
+margin_right = 288.0
+margin_bottom = 672.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element74" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 672.0
+margin_right = 288.0
+margin_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element75" type="TextureRect" parent="."]
+margin_left = 240.0
+margin_top = 720.0
+margin_right = 288.0
+margin_bottom = 768.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element76" type="TextureRect" parent="."]
+margin_top = 768.0
+margin_right = 48.0
+margin_bottom = 816.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element77" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 768.0
+margin_right = 96.0
+margin_bottom = 816.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element78" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 768.0
+margin_right = 144.0
+margin_bottom = 816.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element79" type="TextureRect" parent="."]
+margin_top = 816.0
+margin_right = 48.0
+margin_bottom = 864.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element80" type="TextureRect" parent="."]
+margin_left = 48.0
+margin_top = 816.0
+margin_right = 96.0
+margin_bottom = 864.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element81" type="TextureRect" parent="."]
+margin_left = 96.0
+margin_top = 816.0
+margin_right = 144.0
+margin_bottom = 864.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element82" type="TextureRect" parent="."]
+margin_left = 144.0
+margin_top = 768.0
+margin_right = 288.0
+margin_bottom = 864.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,2630 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://main_shader.tres" type="Material" id=1]
+[ext_resource path="res://grid/Element.gd" type="Script" id=3]
+[ext_resource path="res://grid/element.png" type="Texture" id=5]
+[ext_resource path="res://Panels.gd" type="Script" id=6]
+[ext_resource path="res://Panel.gd" type="Script" id=7]
+[ext_resource path="res://kinect/KinectViewer.gd" type="Script" id=8]
+[ext_resource path="res://serial/SerialViewer.gd" type="Script" id=9]
+[ext_resource path="res://kinect/ViewerPanel.gd" type="Script" id=10]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.290196, 0.301961, 0.396078, 1 )
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_bottom_right = 15
+
+[node name="Main" type="Node2D"]
+
+[node name="ViewportContainer" type="ViewportContainer" parent="."]
+material = ExtResource( 1 )
+margin_top = 900.0
+margin_right = 1200.0
+margin_bottom = 1800.0
+rect_scale = Vector2( 1, -1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="ViewportContainer"]
+size = Vector2( 1200, 900 )
+transparent_bg = true
+handle_input_locally = false
+hdr = false
+usage = 0
+render_direct_to_screen = true
+render_target_v_flip = true
+render_target_update_mode = 3
+
+[node name="Panels" type="Node2D" parent="ViewportContainer/Viewport"]
+script = ExtResource( 6 )
+
+[node name="Panel1" type="TextureRect" parent="ViewportContainer/Viewport/Panels"]
+margin_right = 300.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="TextureRect" parent="ViewportContainer/Viewport/Panels"]
+margin_left = 300.0
+margin_right = 600.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="TextureRect" parent="ViewportContainer/Viewport/Panels"]
+margin_left = 600.0
+margin_right = 900.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel4" type="TextureRect" parent="ViewportContainer/Viewport/Panels"]
+margin_left = 900.0
+margin_right = 1200.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Grid" type="Node2D" parent="ViewportContainer/Viewport"]
+
+[node name="Element" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_right = 50.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element2" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 50.0
+margin_right = 50.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element3" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_right = 100.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element4" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_right = 150.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element5" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 50.0
+margin_right = 150.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element6" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 150.0
+margin_right = 200.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element7" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_right = 250.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element8" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_top = 50.0
+margin_right = 250.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element9" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_right = 300.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element10" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_right = 350.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element11" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 50.0
+margin_right = 350.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element12" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_right = 400.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element13" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_right = 500.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element14" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 50.0
+margin_right = 450.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element15" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 50.0
+margin_right = 500.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element16" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_right = 600.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element17" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_right = 650.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element18" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 50.0
+margin_right = 650.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element19" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 50.0
+margin_right = 650.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element20" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_right = 700.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element21" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_right = 750.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element22" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 50.0
+margin_right = 750.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element23" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 750.0
+margin_right = 800.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element24" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_right = 850.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element25" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 50.0
+margin_right = 850.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element26" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_right = 900.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element27" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_right = 950.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element28" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 50.0
+margin_right = 950.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element29" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_right = 1000.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element30" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_right = 1100.0
+margin_bottom = 50.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element31" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 50.0
+margin_right = 1050.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element32" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1050.0
+margin_top = 50.0
+margin_right = 1100.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element33" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_right = 1200.0
+margin_bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element34" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 100.0
+margin_right = 50.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element35" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 100.0
+margin_bottom = 150.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element36" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 150.0
+margin_right = 100.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element37" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 500.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element38" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 100.0
+margin_right = 550.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element39" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 100.0
+margin_right = 600.0
+margin_bottom = 150.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element40" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 150.0
+margin_right = 600.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element41" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 100.0
+margin_right = 650.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element42" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_top = 100.0
+margin_right = 700.0
+margin_bottom = 150.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element43" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_top = 150.0
+margin_right = 700.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element44" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 100.0
+margin_right = 800.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element45" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 100.0
+margin_right = 850.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element46" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 100.0
+margin_right = 900.0
+margin_bottom = 150.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element47" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 150.0
+margin_right = 900.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element48" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 100.0
+margin_right = 1000.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element49" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 100.0
+margin_right = 1050.0
+margin_bottom = 150.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element50" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 150.0
+margin_right = 1050.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element51" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1050.0
+margin_top = 100.0
+margin_right = 1100.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element52" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_top = 100.0
+margin_right = 1150.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element53" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 100.0
+margin_right = 1200.0
+margin_bottom = 150.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element54" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 150.0
+margin_right = 1200.0
+margin_bottom = 200.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element55" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 200.0
+margin_right = 100.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element56" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 250.0
+margin_right = 50.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element58" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 300.0
+margin_right = 50.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element59" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 200.0
+margin_right = 600.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element60" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 250.0
+margin_right = 550.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element63" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 250.0
+margin_right = 650.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element65" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 300.0
+margin_right = 650.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element66" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_top = 250.0
+margin_right = 700.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element67" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 200.0
+margin_right = 750.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element68" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 750.0
+margin_top = 200.0
+margin_right = 850.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element69" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 250.0
+margin_right = 750.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element70" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 750.0
+margin_top = 250.0
+margin_right = 800.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element71" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 250.0
+margin_right = 850.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element72" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 750.0
+margin_top = 300.0
+margin_right = 800.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element73" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 300.0
+margin_right = 850.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element74" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 200.0
+margin_right = 900.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element75" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 200.0
+margin_right = 950.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element76" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 250.0
+margin_right = 900.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element77" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 250.0
+margin_right = 950.0
+margin_bottom = 300.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element78" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 300.0
+margin_right = 950.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element79" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_top = 200.0
+margin_right = 1200.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element80" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 350.0
+margin_right = 50.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element94" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 400.0
+margin_right = 100.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element118" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 500.0
+margin_right = 50.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element119" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 500.0
+margin_right = 100.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element122" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_top = 500.0
+margin_right = 300.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element128" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 500.0
+margin_right = 350.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element123" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_top = 550.0
+margin_right = 300.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element133" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 550.0
+margin_right = 350.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element181" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 700.0
+margin_right = 400.0
+margin_bottom = 800.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element184" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 700.0
+margin_right = 600.0
+margin_bottom = 800.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element187" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 800.0
+margin_right = 550.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element182" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 700.0
+margin_right = 500.0
+margin_bottom = 800.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element197" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_top = 700.0
+margin_right = 300.0
+margin_bottom = 800.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element198" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 700.0
+margin_right = 200.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element199" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 650.0
+margin_right = 1200.0
+margin_bottom = 850.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element129" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 550.0
+margin_right = 100.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element131" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 600.0
+margin_right = 100.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element171" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 650.0
+margin_right = 150.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element132" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 550.0
+margin_right = 200.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element149" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 550.0
+margin_right = 800.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element130" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 550.0
+margin_right = 50.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element170" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_top = 650.0
+margin_right = 100.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element172" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 150.0
+margin_top = 650.0
+margin_right = 250.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element126" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 500.0
+margin_right = 400.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element127" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 550.0
+margin_right = 400.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element134" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 600.0
+margin_right = 400.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element173" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_top = 650.0
+margin_right = 300.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element174" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 650.0
+margin_right = 350.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element175" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 700.0
+margin_right = 350.0
+margin_bottom = 750.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element176" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 750.0
+margin_right = 350.0
+margin_bottom = 800.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element177" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 650.0
+margin_right = 450.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element183" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 650.0
+margin_right = 600.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element200" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 850.0
+margin_right = 700.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element201" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 850.0
+margin_right = 800.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element178" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 650.0
+margin_right = 500.0
+margin_bottom = 700.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element179" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 700.0
+margin_right = 550.0
+margin_bottom = 750.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element180" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 750.0
+margin_right = 550.0
+margin_bottom = 800.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element185" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 800.0
+margin_right = 600.0
+margin_bottom = 850.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element186" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 850.0
+margin_right = 600.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element188" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 800.0
+margin_right = 450.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element189" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 800.0
+margin_right = 500.0
+margin_bottom = 850.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element190" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 850.0
+margin_right = 500.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element191" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 800.0
+margin_right = 350.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element192" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 800.0
+margin_right = 400.0
+margin_bottom = 850.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element193" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 350.0
+margin_top = 850.0
+margin_right = 400.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element194" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_top = 800.0
+margin_right = 250.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element195" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_top = 800.0
+margin_right = 300.0
+margin_bottom = 850.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element196" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_top = 850.0
+margin_right = 300.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element139" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 550.0
+margin_right = 550.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element140" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 550.0
+margin_right = 600.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element141" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 600.0
+margin_right = 600.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element151" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 500.0
+margin_right = 850.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element152" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 500.0
+margin_right = 900.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element153" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 550.0
+margin_right = 900.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element124" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 250.0
+margin_top = 600.0
+margin_right = 300.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element135" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 550.0
+margin_right = 450.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element136" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 550.0
+margin_right = 500.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element137" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 600.0
+margin_right = 450.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element142" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 550.0
+margin_right = 650.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element143" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_top = 550.0
+margin_right = 700.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element144" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 600.0
+margin_right = 650.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element125" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_top = 600.0
+margin_right = 250.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element120" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 500.0
+margin_right = 200.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element138" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 500.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element150" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 500.0
+margin_right = 800.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element164" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 500.0
+margin_right = 1100.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element121" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_top = 500.0
+margin_right = 250.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element99" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 200.0
+margin_top = 400.0
+margin_right = 300.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element100" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 300.0
+margin_top = 400.0
+margin_right = 400.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element105" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 400.0
+margin_right = 600.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element106" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 400.0
+margin_right = 700.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element95" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 400.0
+margin_right = 150.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element96" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 150.0
+margin_top = 400.0
+margin_right = 200.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element97" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 100.0
+margin_top = 450.0
+margin_right = 150.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element98" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 150.0
+margin_top = 450.0
+margin_right = 200.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element101" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 400.0
+margin_right = 450.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element102" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 400.0
+margin_right = 500.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element103" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 400.0
+margin_top = 450.0
+margin_right = 450.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element104" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 450.0
+margin_top = 450.0
+margin_right = 500.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element107" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 400.0
+margin_right = 900.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element108" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 400.0
+margin_right = 1000.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element109" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 400.0
+margin_right = 750.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element110" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 750.0
+margin_top = 400.0
+margin_right = 800.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element111" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 450.0
+margin_right = 750.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element112" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 750.0
+margin_top = 450.0
+margin_right = 800.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element113" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_top = 400.0
+margin_right = 1200.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element114" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 400.0
+margin_right = 1050.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element115" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1050.0
+margin_top = 400.0
+margin_right = 1100.0
+margin_bottom = 450.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element116" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 450.0
+margin_right = 1050.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element117" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1050.0
+margin_top = 450.0
+margin_right = 1100.0
+margin_bottom = 500.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element81" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 350.0
+margin_right = 100.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element82" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 350.0
+margin_right = 550.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element83" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 350.0
+margin_right = 600.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element84" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 350.0
+margin_right = 650.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element85" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_top = 350.0
+margin_right = 700.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element145" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 500.0
+margin_right = 550.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element146" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 500.0
+margin_right = 600.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element154" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 550.0
+margin_right = 950.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element155" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_top = 550.0
+margin_right = 1000.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element156" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_top = 600.0
+margin_right = 1000.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element157" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 500.0
+margin_right = 950.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element158" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_top = 500.0
+margin_right = 1000.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element165" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_top = 550.0
+margin_right = 1150.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element166" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 550.0
+margin_right = 1200.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element167" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 600.0
+margin_right = 1200.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element168" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_top = 500.0
+margin_right = 1150.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element169" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 500.0
+margin_right = 1200.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element147" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 500.0
+margin_right = 650.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element148" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 650.0
+margin_top = 500.0
+margin_right = 700.0
+margin_bottom = 550.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element202" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 850.0
+margin_right = 850.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element203" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 850.0
+margin_right = 900.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element204" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 850.0
+margin_right = 950.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element205" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_top = 850.0
+margin_right = 1000.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element206" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 850.0
+margin_right = 1050.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element207" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1050.0
+margin_top = 850.0
+margin_right = 1100.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element208" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_top = 850.0
+margin_right = 1150.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element209" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 850.0
+margin_right = 1200.0
+margin_bottom = 900.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element159" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 600.0
+margin_right = 850.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element160" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 600.0
+margin_right = 900.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element161" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 550.0
+margin_right = 1050.0
+margin_bottom = 600.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element162" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1050.0
+margin_top = 550.0
+margin_right = 1100.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element163" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 600.0
+margin_right = 1050.0
+margin_bottom = 650.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element87" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 800.0
+margin_top = 350.0
+margin_right = 850.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element88" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 850.0
+margin_top = 350.0
+margin_right = 900.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element89" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 900.0
+margin_top = 350.0
+margin_right = 950.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element90" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 950.0
+margin_top = 350.0
+margin_right = 1000.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element92" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1100.0
+margin_top = 350.0
+margin_right = 1150.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element93" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1150.0
+margin_top = 350.0
+margin_right = 1200.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element91" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 1000.0
+margin_top = 350.0
+margin_right = 1100.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element86" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 700.0
+margin_top = 350.0
+margin_right = 800.0
+margin_bottom = 400.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element64" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 600.0
+margin_top = 200.0
+margin_right = 700.0
+margin_bottom = 250.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element61" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 500.0
+margin_top = 300.0
+margin_right = 550.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element62" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 550.0
+margin_top = 250.0
+margin_right = 600.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element57" type="TextureRect" parent="ViewportContainer/Viewport/Grid"]
+margin_left = 50.0
+margin_top = 250.0
+margin_right = 100.0
+margin_bottom = 350.0
+texture = ExtResource( 5 )
+stretch_mode = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ViewerPanel" type="Panel" parent="."]
+margin_left = 150.0
+margin_top = 190.0
+margin_right = 1050.0
+margin_bottom = 710.0
+custom_styles/panel = SubResource( 3 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleLabel" type="Label" parent="ViewerPanel"]
+margin_top = 6.0
+margin_right = 900.0
+margin_bottom = 20.0
+text = "debug-o-matic 3000"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KinectViewer" type="Node2D" parent="ViewerPanel"]
+position = Vector2( 20, 20 )
+script = ExtResource( 8 )
+
+[node name="KinectLabel" type="Label" parent="ViewerPanel"]
+visible = false
+margin_right = 340.0
+margin_bottom = 260.0
+rect_scale = Vector2( 2, 2 )
+text = "Kinect not found."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SerialViewer" type="Panel" parent="ViewerPanel"]
+margin_left = 680.0
+margin_top = 56.0
+margin_right = 900.0
+margin_bottom = 520.0
+custom_styles/panel = SubResource( 4 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SerialLabel" type="Label" parent="ViewerPanel"]
+visible = false
+margin_left = 680.0
+margin_right = 790.0
+margin_bottom = 260.0
+rect_scale = Vector2( 2, 2 )
+text = "Serial
+not
+found."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
