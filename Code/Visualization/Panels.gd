@@ -9,12 +9,12 @@ var effect_amount := 10.0
 
 # -
 func _process(_delta: float) -> void:
-	var new_effect_amount = lerp(effect_amount, 0.0 if active else 4.0, 0.1)
-	
+	var new_effect_amount: float = 0 * lerp(effect_amount, 0.0 if active else 4.0, 0.1)
+		
 	if effect_amount != new_effect_amount:
 		effect_amount = new_effect_amount
 		
-		var material: ShaderMaterial = $"../../../ViewportContainer".material
+		var material: ShaderMaterial = $"../../../MainViewport".material
 		material.set_shader_param("bg_effect_amount", effect_amount)
 	
 	$"../Grid".modulate.a = lerp($"../Grid".modulate.a, 0.0 if active else 1.0, 0.1)

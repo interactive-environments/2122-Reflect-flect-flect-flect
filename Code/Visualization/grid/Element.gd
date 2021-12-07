@@ -16,16 +16,13 @@ func _ready() -> void:
 # -
 func _process(_delta: float) -> void:
 	# get the pixel at the element's position
-	var pos: Vector2 = (rect_position + get_parent().position) * 0.5
+	var pos: Vector2 = (start_position + get_parent().position) * 0.47
 	var pixel: int = KinectHandler.get_pixel(max(int(pos.x), 0), max(int(pos.y), 0))
-	
-	#var mouse_pos := Vector2(get_global_mouse_position().x, 900 + get_global_mouse_position().y)
-	#var pixel := 2 if Rect2(start_position, start_size).has_point(mouse_pos) else 0
 	
 	var scale := rect_scale.x
 	var target_scale := 1.0
 	
-	if pixel >= 2:
+	if pixel >= 1:
 		timer = 20
 	else:
 		timer -= 1

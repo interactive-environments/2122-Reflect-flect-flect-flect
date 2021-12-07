@@ -24,3 +24,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		$SerialViewer.visible = visible and SerialHandler.opened
 		
 		get_tree().set_input_as_handled()
+	elif event.is_action_pressed("ui_fullscreen"):
+		OS.window_fullscreen = not OS.window_fullscreen
+		
+		get_tree().set_input_as_handled()

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Kinect;
 using System;
+using System.Diagnostics;
 using System.IO.MemoryMappedFiles;
 using System.Linq;
 using System.Threading.Tasks;
@@ -34,7 +35,6 @@ var outputData = new byte[pixelDimensions.Count];
 using var file = MemoryMappedFile.CreateOrOpen("KinectImage", squareDimensions.Count);
 using var fileReadWrite = file.CreateViewAccessor();
 
-
 // Create depth frame callback
 sensor.DepthFrameReady += (_, args) =>
 {
@@ -60,6 +60,8 @@ while (true)
 	Console.ReadLine();
 
 
+
+
 // Process method
 void Process(DepthImagePixel[] input, byte[] output)
 {
@@ -72,11 +74,25 @@ void Process(DepthImagePixel[] input, byte[] output)
 		{
 			// Process the input
 			output[y * squareDimensions.X + x] =
-				(!pixel.IsKnownDepth || pixel.Depth > 3000) ? 
+				(!pixel.IsKnownDepth || pixel.Depth > 2500) ? 
 					(byte)0
 				:
-					(pixel.Depth > 2000 ? (byte)1 : (byte)2);
+					(pixel.Depth > 1500 ? (byte)1 : (byte)2);
 		}
+	});
+
+	Parallel.For(0, squareDimensions.X - 1, x =>
+	{
+		// Get pixels that are close
+		var closePixels = 0;
+		for (int y = 0; y < squareDimensions.Y; y++)
+			if (output[y * squareDimensions.X + x] == (byte)2)
+				closePixels++;
+
+		// Fill pixel column if enough pixels are close
+		if (closePixels > 20)
+			for (int y = 0; y < squareDimensions.Y; y++)
+				output[y * squareDimensions.X + x] = (byte)2;
 	});
 }
 
