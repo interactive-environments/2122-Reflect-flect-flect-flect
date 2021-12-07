@@ -1,12 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://main_shader.tres" type="Material" id=1]
+[ext_resource path="res://grid/grid_shader_material.tres" type="Material" id=1]
 [ext_resource path="res://grid/Grid.tscn" type="PackedScene" id=2]
-[ext_resource path="res://grid/element.png" type="Texture" id=5]
-[ext_resource path="res://Panels.gd" type="Script" id=6]
-[ext_resource path="res://Panel.gd" type="Script" id=7]
 [ext_resource path="res://kinect/KinectViewer.gd" type="Script" id=8]
-[ext_resource path="res://serial/SerialViewer.gd" type="Script" id=9]
 [ext_resource path="res://kinect/ViewerPanel.gd" type="Script" id=10]
 
 [sub_resource type="StyleBoxFlat" id=3]
@@ -15,10 +11,6 @@ corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
-
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 1, 1, 1, 1 )
-corner_radius_bottom_right = 15
 
 [node name="Main" type="Node2D"]
 
@@ -34,6 +26,7 @@ __meta__ = {
 
 [node name="Viewport" type="Viewport" parent="MainViewport"]
 size = Vector2( 1200, 1000 )
+transparent_bg = true
 handle_input_locally = false
 hdr = false
 usage = 0
@@ -42,53 +35,6 @@ render_target_v_flip = true
 render_target_update_mode = 3
 
 [node name="Grid" parent="MainViewport/Viewport" instance=ExtResource( 2 )]
-
-[node name="Panels" type="Node2D" parent="MainViewport/Viewport"]
-visible = false
-script = ExtResource( 6 )
-
-[node name="Panel1" type="TextureRect" parent="MainViewport/Viewport/Panels"]
-margin_right = 300.0
-margin_bottom = 900.0
-texture = ExtResource( 5 )
-stretch_mode = 1
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Panel2" type="TextureRect" parent="MainViewport/Viewport/Panels"]
-margin_left = 300.0
-margin_right = 600.0
-margin_bottom = 900.0
-texture = ExtResource( 5 )
-stretch_mode = 1
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Panel3" type="TextureRect" parent="MainViewport/Viewport/Panels"]
-margin_left = 600.0
-margin_right = 900.0
-margin_bottom = 900.0
-texture = ExtResource( 5 )
-stretch_mode = 1
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Panel4" type="TextureRect" parent="MainViewport/Viewport/Panels"]
-margin_left = 900.0
-margin_right = 1200.0
-margin_bottom = 900.0
-texture = ExtResource( 5 )
-stretch_mode = 1
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ViewerPanel" type="Panel" parent="."]
 visible = false
@@ -122,32 +68,6 @@ margin_right = 340.0
 margin_bottom = 260.0
 rect_scale = Vector2( 2, 2 )
 text = "Kinect not found."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="SerialViewer" type="Panel" parent="ViewerPanel"]
-margin_left = 680.0
-margin_top = 56.0
-margin_right = 900.0
-margin_bottom = 520.0
-custom_styles/panel = SubResource( 4 )
-script = ExtResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="SerialLabel" type="Label" parent="ViewerPanel"]
-visible = false
-margin_left = 680.0
-margin_right = 790.0
-margin_bottom = 260.0
-rect_scale = Vector2( 2, 2 )
-text = "Serial
-not
-found."
 align = 1
 valign = 1
 __meta__ = {
