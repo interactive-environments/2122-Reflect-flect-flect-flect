@@ -1,15 +1,17 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://grid/grid_shader.gdshader" type="Shader" id=1]
 [ext_resource path="res://grid/Grid.tscn" type="PackedScene" id=2]
-[ext_resource path="res://images/content_2.png" type="Texture" id=3]
+[ext_resource path="res://images/cover_blanca.png" type="Texture" id=3]
 [ext_resource path="res://images/cover.png" type="Texture" id=4]
 [ext_resource path="res://images/content_3.png" type="Texture" id=5]
-[ext_resource path="res://images/content_1.png" type="Texture" id=6]
+[ext_resource path="res://images/cover_astrology.png" type="Texture" id=6]
 [ext_resource path="res://grid/Content.gd" type="Script" id=7]
 [ext_resource path="res://kinect/KinectViewer.gd" type="Script" id=8]
-[ext_resource path="res://grid/ContentInputHandler.gd" type="Script" id=9]
+[ext_resource path="res://grid/ContentHandler.gd" type="Script" id=9]
 [ext_resource path="res://kinect/ViewerPanel.gd" type="Script" id=10]
+[ext_resource path="res://images/content_blanca.png" type="Texture" id=11]
+[ext_resource path="res://images/content_astrology.png" type="Texture" id=12]
 
 [sub_resource type="ViewportTexture" id=7]
 viewport_path = NodePath("ContentViewport")
@@ -39,11 +41,29 @@ usage = 0
 render_target_v_flip = true
 render_target_update_mode = 3
 
-[node name="Cover" type="Sprite" parent="CoverViewport"]
+[node name="Node2D" type="Node2D" parent="CoverViewport"]
+script = ExtResource( 7 )
+
+[node name="Cover1" type="Sprite" parent="CoverViewport/Node2D"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Cover2" type="Sprite" parent="CoverViewport/Node2D"]
+position = Vector2( 1200, 0 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Cover3" type="Sprite" parent="CoverViewport/Node2D"]
+position = Vector2( 2400, 0 )
 texture = ExtResource( 4 )
 centered = false
 
-[node name="ContentInputHandler" type="Node" parent="."]
+[node name="Cover12" type="Sprite" parent="CoverViewport/Node2D"]
+position = Vector2( 3600, 0 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="ContentHandler" type="Node" parent="."]
 script = ExtResource( 9 )
 
 [node name="ContentViewport" type="Viewport" parent="."]
@@ -56,12 +76,12 @@ render_target_update_mode = 3
 script = ExtResource( 7 )
 
 [node name="Content1" type="Sprite" parent="ContentViewport/Content"]
-texture = ExtResource( 6 )
+texture = ExtResource( 12 )
 centered = false
 
 [node name="Content2" type="Sprite" parent="ContentViewport/Content"]
 position = Vector2( 1200, 0 )
-texture = ExtResource( 3 )
+texture = ExtResource( 11 )
 centered = false
 
 [node name="Content3" type="Sprite" parent="ContentViewport/Content"]
@@ -71,7 +91,7 @@ centered = false
 
 [node name="Content12" type="Sprite" parent="ContentViewport/Content"]
 position = Vector2( 3600, 0 )
-texture = ExtResource( 6 )
+texture = ExtResource( 12 )
 centered = false
 
 [node name="MainViewport" type="ViewportContainer" parent="."]

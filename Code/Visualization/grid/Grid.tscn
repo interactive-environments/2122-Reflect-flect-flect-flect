@@ -6,7 +6,7 @@
 [node name="Grid" type="Node2D"]
 
 [node name="Element" type="TextureRect" parent="."]
-margin_right = 50.0
+margin_right = 100.0
 margin_bottom = 50.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -16,9 +16,9 @@ __meta__ = {
 }
 
 [node name="Element2" type="TextureRect" parent="."]
-margin_top = 50.0
-margin_right = 50.0
-margin_bottom = 100.0
+margin_left = 100.0
+margin_right = 150.0
+margin_bottom = 50.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -27,315 +27,8 @@ __meta__ = {
 }
 
 [node name="Element3" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_right = 100.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element4" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_right = 150.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element5" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 50.0
-margin_right = 150.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element6" type="TextureRect" parent="."]
 margin_left = 150.0
 margin_right = 200.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element7" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_right = 250.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element8" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 50.0
-margin_right = 250.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element9" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_right = 300.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element10" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_right = 350.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element11" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 50.0
-margin_right = 350.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element12" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_right = 400.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element13" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_right = 500.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element14" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 50.0
-margin_right = 450.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element15" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 50.0
-margin_right = 500.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element16" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_right = 600.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element17" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_right = 650.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element18" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 50.0
-margin_right = 650.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element19" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 50.0
-margin_right = 650.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element20" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_right = 700.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element21" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_right = 750.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element22" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 50.0
-margin_right = 750.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element23" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_right = 800.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element24" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_right = 850.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element25" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 50.0
-margin_right = 850.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element26" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_right = 900.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element27" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_right = 950.0
-margin_bottom = 50.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element28" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 50.0
-margin_right = 950.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element29" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_right = 1000.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element30" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_right = 1100.0
 margin_bottom = 50.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -345,9 +38,9 @@ __meta__ = {
 }
 
 [node name="Element31" type="TextureRect" parent="."]
-margin_left = 1000.0
+margin_left = 200.0
 margin_top = 50.0
-margin_right = 1050.0
+margin_right = 250.0
 margin_bottom = 100.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -357,9 +50,9 @@ __meta__ = {
 }
 
 [node name="Element32" type="TextureRect" parent="."]
-margin_left = 1050.0
+margin_left = 250.0
 margin_top = 50.0
-margin_right = 1100.0
+margin_right = 300.0
 margin_bottom = 100.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -368,1225 +61,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element33" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_right = 1200.0
-margin_bottom = 100.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element34" type="TextureRect" parent="."]
-margin_top = 100.0
-margin_right = 50.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element35" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 100.0
-margin_right = 100.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element36" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 150.0
-margin_right = 100.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element38" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 100.0
-margin_right = 550.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element39" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 100.0
-margin_right = 600.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element40" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 150.0
-margin_right = 600.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element41" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 100.0
-margin_right = 650.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element42" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 100.0
-margin_right = 700.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element43" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 150.0
-margin_right = 700.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element44" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 100.0
-margin_right = 800.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element45" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 100.0
-margin_right = 850.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element46" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 100.0
-margin_right = 900.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element47" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 150.0
-margin_right = 900.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element48" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 100.0
-margin_right = 1000.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element49" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 100.0
-margin_right = 1050.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element50" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 150.0
-margin_right = 1050.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element51" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 100.0
-margin_right = 1100.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element52" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 100.0
-margin_right = 1150.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element53" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 100.0
-margin_right = 1200.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element54" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 150.0
-margin_right = 1200.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element55" type="TextureRect" parent="."]
-margin_top = 200.0
-margin_right = 100.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element56" type="TextureRect" parent="."]
-margin_top = 250.0
-margin_right = 50.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element58" type="TextureRect" parent="."]
-margin_top = 300.0
-margin_right = 50.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element59" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 200.0
-margin_right = 600.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element60" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 250.0
-margin_right = 550.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element63" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 250.0
-margin_right = 650.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element65" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 300.0
-margin_right = 650.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element66" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 250.0
-margin_right = 700.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element67" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 200.0
-margin_right = 750.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element68" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 200.0
-margin_right = 850.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element69" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 250.0
-margin_right = 750.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element70" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 250.0
-margin_right = 800.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element71" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 250.0
-margin_right = 850.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element72" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 300.0
-margin_right = 800.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element73" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 300.0
-margin_right = 850.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element74" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 200.0
-margin_right = 900.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element75" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 200.0
-margin_right = 950.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element76" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 250.0
-margin_right = 900.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element77" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 250.0
-margin_right = 950.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element78" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 300.0
-margin_right = 950.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element80" type="TextureRect" parent="."]
-margin_top = 350.0
-margin_right = 50.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element94" type="TextureRect" parent="."]
-margin_top = 400.0
-margin_right = 100.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element118" type="TextureRect" parent="."]
-margin_top = 500.0
-margin_right = 50.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element119" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 500.0
-margin_right = 100.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element122" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 500.0
-margin_right = 300.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element128" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 500.0
-margin_right = 350.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element123" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 550.0
-margin_right = 300.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element133" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 550.0
-margin_right = 350.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element181" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 700.0
-margin_right = 400.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element184" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 700.0
-margin_right = 600.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element187" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 800.0
-margin_right = 550.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element182" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 700.0
-margin_right = 500.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element197" type="TextureRect" parent="."]
+[node name="Element4" type="TextureRect" parent="."]
 margin_left = 200.0
-margin_top = 700.0
 margin_right = 300.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element129" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 550.0
-margin_right = 100.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element131" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 600.0
-margin_right = 100.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element171" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 650.0
-margin_right = 150.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element132" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 550.0
-margin_right = 200.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element149" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 550.0
-margin_right = 800.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element130" type="TextureRect" parent="."]
-margin_top = 550.0
-margin_right = 50.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element170" type="TextureRect" parent="."]
-margin_top = 650.0
-margin_right = 100.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element172" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 650.0
-margin_right = 250.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element126" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 500.0
-margin_right = 400.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element127" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 550.0
-margin_right = 400.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element134" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 600.0
-margin_right = 400.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element173" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 650.0
-margin_right = 300.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element174" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 650.0
-margin_right = 350.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element175" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 700.0
-margin_right = 350.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element176" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 750.0
-margin_right = 350.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element177" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 650.0
-margin_right = 450.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element183" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 650.0
-margin_right = 600.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element200" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 850.0
-margin_right = 700.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element201" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 850.0
-margin_right = 800.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element178" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 650.0
-margin_right = 500.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element179" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 700.0
-margin_right = 550.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element180" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 750.0
-margin_right = 550.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element185" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 800.0
-margin_right = 600.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element186" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 850.0
-margin_right = 600.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element188" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 800.0
-margin_right = 450.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element189" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 800.0
-margin_right = 500.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element190" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 850.0
-margin_right = 500.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element191" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 800.0
-margin_right = 350.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element192" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 800.0
-margin_right = 400.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element193" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 850.0
-margin_right = 400.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element194" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 800.0
-margin_right = 250.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element195" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 800.0
-margin_right = 300.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element196" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 850.0
-margin_right = 300.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element139" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 550.0
-margin_right = 550.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element140" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 550.0
-margin_right = 600.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element141" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 600.0
-margin_right = 600.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element151" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 500.0
-margin_right = 850.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element152" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 500.0
-margin_right = 900.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element153" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 550.0
-margin_right = 900.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element124" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 600.0
-margin_right = 300.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element135" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 550.0
-margin_right = 450.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element136" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 550.0
-margin_right = 500.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element137" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 600.0
-margin_right = 450.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element142" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 550.0
-margin_right = 650.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element143" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 550.0
-margin_right = 700.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element144" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 600.0
-margin_right = 650.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element125" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 600.0
-margin_right = 250.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element120" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 500.0
-margin_right = 200.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element138" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 500.0
-margin_right = 500.0
-margin_bottom = 550.0
+margin_bottom = 50.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -1595,34 +73,10 @@ __meta__ = {
 }
 
 [node name="Element150" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 500.0
-margin_right = 800.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element164" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 500.0
-margin_right = 1100.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element121" type="TextureRect" parent="."]
 margin_left = 200.0
 margin_top = 500.0
 margin_right = 250.0
-margin_bottom = 600.0
+margin_bottom = 550.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -1630,9 +84,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element99" type="TextureRect" parent="."]
+[node name="Element151" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 500.0
+margin_right = 300.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element152" type="TextureRect" parent="."]
 margin_left = 200.0
-margin_top = 400.0
+margin_top = 450.0
 margin_right = 300.0
 margin_bottom = 500.0
 texture = ExtResource( 2 )
@@ -1642,719 +108,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element100" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 400.0
-margin_right = 400.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element105" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 400.0
-margin_right = 600.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element106" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 400.0
-margin_right = 700.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element95" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 400.0
-margin_right = 150.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element96" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 400.0
-margin_right = 200.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element97" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 450.0
-margin_right = 150.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element98" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 450.0
-margin_right = 200.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element101" type="TextureRect" parent="."]
+[node name="Element232" type="TextureRect" parent="."]
 margin_left = 400.0
-margin_top = 400.0
-margin_right = 450.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element102" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 400.0
+margin_top = 550.0
 margin_right = 500.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element103" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 450.0
-margin_right = 450.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element104" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 450.0
-margin_right = 500.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element107" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 400.0
-margin_right = 900.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element108" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 400.0
-margin_right = 1000.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element109" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 400.0
-margin_right = 750.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element110" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 400.0
-margin_right = 800.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element111" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 450.0
-margin_right = 750.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element112" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 450.0
-margin_right = 800.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element113" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 400.0
-margin_right = 1200.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element114" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 400.0
-margin_right = 1050.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element115" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 400.0
-margin_right = 1100.0
-margin_bottom = 450.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element116" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 450.0
-margin_right = 1050.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element117" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 450.0
-margin_right = 1100.0
-margin_bottom = 500.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element81" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 350.0
-margin_right = 100.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element82" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 350.0
-margin_right = 550.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element83" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 350.0
-margin_right = 600.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element84" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 350.0
-margin_right = 650.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element85" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 350.0
-margin_right = 700.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element145" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 500.0
-margin_right = 550.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element146" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 500.0
-margin_right = 600.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element154" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 550.0
-margin_right = 950.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element155" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 550.0
-margin_right = 1000.0
 margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element156" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 600.0
-margin_right = 1000.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element157" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 500.0
-margin_right = 950.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element158" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 500.0
-margin_right = 1000.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element165" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 550.0
-margin_right = 1150.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element166" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 550.0
-margin_right = 1200.0
-margin_bottom = 600.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element167" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 600.0
-margin_right = 1200.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element168" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 500.0
-margin_right = 1150.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element169" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 500.0
-margin_right = 1200.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element147" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 500.0
-margin_right = 650.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element148" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 500.0
-margin_right = 700.0
-margin_bottom = 550.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element202" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 850.0
-margin_right = 850.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element203" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 850.0
-margin_right = 900.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element204" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 850.0
-margin_right = 950.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element205" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 850.0
-margin_right = 1000.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element206" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 850.0
-margin_right = 1050.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element207" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 850.0
-margin_right = 1100.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element208" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 850.0
-margin_right = 1150.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element209" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 850.0
-margin_right = 1200.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element281" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 650.0
-margin_right = 700.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element282" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 650.0
-margin_right = 800.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element283" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 650.0
-margin_right = 850.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element284" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 650.0
-margin_right = 900.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element285" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 650.0
-margin_right = 950.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element286" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 650.0
-margin_right = 1000.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element287" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 650.0
-margin_right = 1050.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element288" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 650.0
-margin_right = 1100.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element289" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 650.0
-margin_right = 1150.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element290" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 650.0
-margin_right = 1200.0
-margin_bottom = 700.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element159" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 600.0
-margin_right = 850.0
-margin_bottom = 650.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2363,175 +121,10 @@ __meta__ = {
 }
 
 [node name="Element160" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 600.0
-margin_right = 900.0
-margin_bottom = 650.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element198" type="TextureRect" parent="."]
-margin_top = 700.0
-margin_right = 50.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element291" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 700.0
-margin_right = 100.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element292" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 750.0
-margin_right = 100.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element293" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 750.0
-margin_right = 150.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element294" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 750.0
-margin_right = 200.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element295" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 800.0
-margin_right = 200.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element296" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 700.0
-margin_right = 150.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element297" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 700.0
-margin_right = 200.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element298" type="TextureRect" parent="."]
-margin_top = 850.0
-margin_right = 50.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element299" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 850.0
-margin_right = 100.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element300" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 850.0
-margin_right = 150.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element301" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 850.0
-margin_right = 200.0
-margin_bottom = 900.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element302" type="TextureRect" parent="."]
-margin_top = 800.0
-margin_right = 50.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element303" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 800.0
-margin_right = 100.0
-margin_bottom = 850.0
+margin_left = 1050.0
+margin_top = 350.0
+margin_right = 1100.0
+margin_bottom = 400.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2541,6 +134,2599 @@ __meta__ = {
 
 [node name="Element161" type="TextureRect" parent="."]
 margin_left = 1000.0
+margin_top = 300.0
+margin_right = 1100.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element169" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 400.0
+margin_right = 850.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element170" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 350.0
+margin_right = 850.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element28" type="TextureRect" parent="."]
+margin_top = 50.0
+margin_right = 50.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element29" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 100.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element30" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 50.0
+margin_right = 200.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element43" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 100.0
+margin_right = 500.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element44" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 100.0
+margin_right = 550.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element45" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 100.0
+margin_right = 600.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element46" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 150.0
+margin_right = 450.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element47" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 150.0
+margin_right = 500.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element48" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 150.0
+margin_right = 600.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element5" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_right = 400.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element33" type="TextureRect" parent="."]
+margin_top = 100.0
+margin_right = 100.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element212" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 550.0
+margin_right = 250.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element213" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 550.0
+margin_right = 300.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element214" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 600.0
+margin_right = 300.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element215" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 650.0
+margin_right = 300.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element322" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 900.0
+margin_right = 400.0
+margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element216" type="TextureRect" parent="."]
+margin_top = 600.0
+margin_right = 100.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element308" type="TextureRect" parent="."]
+margin_top = 900.0
+margin_right = 100.0
+margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element38" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 100.0
+margin_right = 300.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element100" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 350.0
+margin_right = 200.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element6" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_right = 450.0
+margin_bottom = 50.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element7" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_right = 500.0
+margin_bottom = 50.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element8" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 50.0
+margin_right = 450.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element9" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 50.0
+margin_right = 500.0
+margin_bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element34" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 150.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element35" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element36" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 150.0
+margin_right = 150.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element244" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 750.0
+margin_right = 150.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element245" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 750.0
+margin_right = 200.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element246" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 800.0
+margin_right = 200.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element247" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 850.0
+margin_right = 150.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element248" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 850.0
+margin_right = 200.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element249" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 900.0
+margin_right = 150.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element37" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 150.0
+margin_right = 200.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element217" type="TextureRect" parent="."]
+margin_top = 700.0
+margin_right = 50.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element218" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 700.0
+margin_right = 100.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element219" type="TextureRect" parent="."]
+margin_top = 750.0
+margin_right = 100.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element220" type="TextureRect" parent="."]
+margin_top = 800.0
+margin_right = 50.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element221" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 800.0
+margin_right = 100.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element222" type="TextureRect" parent="."]
+margin_top = 850.0
+margin_right = 50.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element223" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 850.0
+margin_right = 100.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element162" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 350.0
+margin_right = 1000.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element163" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 350.0
+margin_right = 1050.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element164" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 400.0
+margin_right = 1050.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element165" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 450.0
+margin_right = 1000.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element166" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 450.0
+margin_right = 1050.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element167" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 500.0
+margin_right = 1000.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element168" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 500.0
+margin_right = 1050.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element140" type="TextureRect" parent="."]
+margin_top = 400.0
+margin_right = 50.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element141" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 400.0
+margin_right = 100.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element142" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 450.0
+margin_right = 150.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element143" type="TextureRect" parent="."]
+margin_top = 450.0
+margin_right = 100.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element144" type="TextureRect" parent="."]
+margin_top = 500.0
+margin_right = 50.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element145" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 500.0
+margin_right = 100.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element146" type="TextureRect" parent="."]
+margin_top = 550.0
+margin_right = 50.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element147" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 550.0
+margin_right = 100.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element77" type="TextureRect" parent="."]
+margin_top = 200.0
+margin_right = 50.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element78" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 200.0
+margin_right = 100.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element79" type="TextureRect" parent="."]
+margin_top = 250.0
+margin_right = 50.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element80" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 250.0
+margin_right = 100.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element39" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 350.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element40" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 100.0
+margin_right = 400.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element41" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 150.0
+margin_right = 350.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element83" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 200.0
+margin_right = 400.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element84" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 200.0
+margin_right = 250.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element85" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 200.0
+margin_right = 300.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element86" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 250.0
+margin_right = 250.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element87" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 250.0
+margin_right = 300.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element88" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 200.0
+margin_right = 450.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element89" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 250.0
+margin_right = 450.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element42" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 150.0
+margin_right = 400.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element49" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 100.0
+margin_right = 650.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element50" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 100.0
+margin_right = 700.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element52" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 100.0
+margin_right = 750.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element53" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 100.0
+margin_right = 800.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element54" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 100.0
+margin_right = 850.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element55" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 100.0
+margin_right = 900.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element65" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 100.0
+margin_right = 950.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element66" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 100.0
+margin_right = 1000.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element67" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 100.0
+margin_right = 1050.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element68" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 100.0
+margin_right = 1100.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element69" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 100.0
+margin_right = 1150.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element70" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 100.0
+margin_right = 1200.0
+margin_bottom = 150.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element51" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 150.0
+margin_right = 700.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element10" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_right = 550.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element11" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_right = 600.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element12" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 50.0
+margin_right = 600.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element26" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_right = 1200.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element27" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 50.0
+margin_right = 1200.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element13" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_right = 650.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element56" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 150.0
+margin_right = 650.0
+margin_bottom = 250.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element81" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 200.0
+margin_right = 150.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element82" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 200.0
+margin_right = 200.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element90" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 200.0
+margin_right = 550.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element91" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 200.0
+margin_right = 600.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element193" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 450.0
+margin_right = 550.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element194" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 450.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element195" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 500.0
+margin_right = 500.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element92" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 250.0
+margin_right = 550.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element93" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 250.0
+margin_right = 600.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element134" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 300.0
+margin_right = 600.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element206" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 550.0
+margin_right = 200.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element207" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 600.0
+margin_right = 150.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element208" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 600.0
+margin_right = 200.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element209" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 650.0
+margin_right = 150.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element210" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 650.0
+margin_right = 200.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element211" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 700.0
+margin_right = 200.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element323" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 850.0
+margin_right = 300.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element135" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 350.0
+margin_right = 550.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element136" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 350.0
+margin_right = 600.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element137" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 400.0
+margin_right = 550.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element138" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 400.0
+margin_right = 600.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element94" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 200.0
+margin_right = 500.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element148" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 500.0
+margin_right = 150.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element149" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 450.0
+margin_right = 200.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element95" type="TextureRect" parent="."]
+margin_top = 300.0
+margin_right = 50.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element96" type="TextureRect" parent="."]
+margin_top = 350.0
+margin_right = 50.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element97" type="TextureRect" parent="."]
+margin_left = 100.0
+margin_top = 300.0
+margin_right = 150.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element98" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 300.0
+margin_right = 200.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element99" type="TextureRect" parent="."]
+margin_left = 50.0
+margin_top = 300.0
+margin_right = 100.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element139" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 350.0
+margin_right = 350.0
+margin_bottom = 450.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element14" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_right = 700.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element15" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_right = 750.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element20" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 50.0
+margin_right = 800.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element57" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 200.0
+margin_right = 700.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element58" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 200.0
+margin_right = 750.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element59" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 150.0
+margin_right = 750.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element112" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 250.0
+margin_right = 800.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element113" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 250.0
+margin_right = 750.0
+margin_bottom = 350.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element114" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 300.0
+margin_right = 800.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element115" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 300.0
+margin_right = 850.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element116" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 250.0
+margin_right = 850.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element117" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 250.0
+margin_right = 900.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element118" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 300.0
+margin_right = 900.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element119" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 250.0
+margin_right = 950.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element108" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 250.0
+margin_right = 650.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element109" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 300.0
+margin_right = 650.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element110" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 300.0
+margin_right = 700.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element111" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 250.0
+margin_right = 700.0
+margin_bottom = 300.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element21" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 50.0
+margin_right = 850.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element61" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 200.0
+margin_right = 900.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element62" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 200.0
+margin_right = 950.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element63" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 150.0
+margin_right = 900.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element172" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 300.0
+margin_right = 1200.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element173" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 450.0
+margin_right = 1200.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element174" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 500.0
+margin_right = 1200.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element175" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 400.0
+margin_right = 1200.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element176" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 350.0
+margin_right = 1200.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element121" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 250.0
+margin_right = 1000.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element122" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 250.0
+margin_right = 1050.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element184" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 450.0
+margin_right = 600.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element185" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 500.0
+margin_right = 600.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element186" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 500.0
+margin_right = 650.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element187" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 450.0
+margin_right = 650.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element188" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 450.0
+margin_right = 700.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element189" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 500.0
+margin_right = 700.0
+margin_bottom = 550.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element190" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 450.0
+margin_right = 750.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element191" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 450.0
+margin_right = 800.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element192" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 450.0
+margin_right = 850.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element123" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 250.0
+margin_right = 1100.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element124" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 250.0
+margin_right = 1150.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element125" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 250.0
+margin_right = 1200.0
+margin_bottom = 300.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element126" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 300.0
+margin_right = 1000.0
+margin_bottom = 350.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element64" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 150.0
+margin_right = 950.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element72" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 200.0
+margin_right = 1100.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element73" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 200.0
+margin_right = 1150.0
+margin_bottom = 250.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element74" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 150.0
+margin_right = 1100.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element75" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 150.0
+margin_right = 1150.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element22" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 50.0
+margin_right = 1000.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element23" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 50.0
+margin_right = 1050.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element16" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_right = 850.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element17" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_right = 900.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element18" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_right = 950.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element76" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 150.0
+margin_right = 1200.0
+margin_bottom = 250.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element171" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 300.0
+margin_right = 1150.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element120" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 300.0
+margin_right = 950.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element243" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 550.0
+margin_right = 1200.0
+margin_bottom = 650.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element19" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_right = 1050.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element25" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_right = 1150.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element60" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 150.0
+margin_right = 850.0
+margin_bottom = 250.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element196" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 350.0
+margin_right = 900.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element197" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 550.0
+margin_right = 850.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element198" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 550.0
+margin_right = 900.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element199" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 500.0
+margin_right = 850.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element200" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 500.0
+margin_right = 900.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element201" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 400.0
+margin_right = 900.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element202" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 500.0
+margin_right = 800.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element291" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 800.0
+margin_right = 600.0
+margin_bottom = 900.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element177" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 400.0
+margin_right = 1100.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element178" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 400.0
+margin_right = 1150.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element203" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 400.0
+margin_right = 950.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element274" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 700.0
+margin_right = 1200.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element275" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 650.0
+margin_right = 1100.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element276" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 650.0
+margin_right = 1150.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element204" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 450.0
+margin_right = 950.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element205" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 550.0
+margin_right = 950.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element179" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 550.0
+margin_right = 1100.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element297" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 750.0
+margin_right = 1100.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element298" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 800.0
+margin_right = 950.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element299" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 800.0
+margin_right = 1000.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element300" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 750.0
+margin_right = 950.0
+margin_bottom = 800.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element301" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 750.0
+margin_right = 1000.0
+margin_bottom = 800.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element302" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 750.0
+margin_right = 900.0
+margin_bottom = 850.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element303" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 800.0
+margin_right = 1200.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element180" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 600.0
+margin_right = 1100.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element181" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 600.0
+margin_right = 1150.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element277" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 650.0
+margin_right = 1200.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element182" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 550.0
+margin_right = 1150.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element183" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 450.0
+margin_right = 1150.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element156" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 400.0
+margin_right = 750.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element157" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 400.0
+margin_right = 800.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element241" type="TextureRect" parent="."]
+margin_left = 950.0
 margin_top = 550.0
 margin_right = 1050.0
 margin_bottom = 600.0
@@ -2551,10 +2737,34 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element162" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 550.0
+[node name="Element304" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 750.0
+margin_right = 1050.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element305" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 800.0
 margin_right = 1100.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element242" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 600.0
+margin_right = 1000.0
 margin_bottom = 650.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -2563,7 +2773,56 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element163" type="TextureRect" parent="."]
+[node name="Element306" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 750.0
+margin_right = 1200.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element307" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 800.0
+margin_right = 1150.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element158" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 350.0
+margin_right = 750.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element237" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 600.0
+margin_right = 900.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element238" type="TextureRect" parent="."]
 margin_left = 1000.0
 margin_top = 600.0
 margin_right = 1050.0
@@ -2575,11 +2834,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element199" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 750.0
+[node name="Element239" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 600.0
+margin_right = 950.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element240" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 600.0
 margin_right = 800.0
-margin_bottom = 850.0
+margin_bottom = 650.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2587,47 +2859,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element256" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 700.0
-margin_right = 850.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element257" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 700.0
-margin_right = 900.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element258" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 750.0
-margin_right = 900.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element259" type="TextureRect" parent="."]
+[node name="Element159" type="TextureRect" parent="."]
 margin_left = 600.0
-margin_top = 750.0
-margin_right = 650.0
-margin_bottom = 800.0
+margin_top = 350.0
+margin_right = 700.0
+margin_bottom = 450.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2635,70 +2872,185 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element260" type="TextureRect" parent="."]
+[node name="Element71" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 150.0
+margin_right = 1050.0
+margin_bottom = 250.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element24" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 50.0
+margin_right = 750.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element101" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 350.0
+margin_right = 250.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element102" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 350.0
+margin_right = 300.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element103" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 400.0
+margin_right = 250.0
+margin_bottom = 450.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element104" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 300.0
+margin_right = 350.0
+margin_bottom = 350.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element105" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 400.0
+margin_right = 300.0
+margin_bottom = 450.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element153" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 450.0
+margin_right = 400.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element154" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 450.0
+margin_right = 350.0
+margin_bottom = 500.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element155" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 500.0
+margin_right = 350.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element228" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 600.0
+margin_right = 500.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element229" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 550.0
+margin_right = 600.0
+margin_bottom = 650.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element230" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 550.0
+margin_right = 550.0
+margin_bottom = 600.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element233" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 600.0
+margin_right = 700.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element292" type="TextureRect" parent="."]
 margin_left = 650.0
 margin_top = 750.0
-margin_right = 700.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element261" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 800.0
-margin_right = 650.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element262" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 700.0
-margin_right = 800.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element263" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 700.0
-margin_right = 1100.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element264" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 750.0
-margin_right = 950.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element265" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 750.0
-margin_right = 1000.0
+margin_right = 750.0
 margin_bottom = 800.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -2707,11 +3059,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element266" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 800.0
-margin_right = 1000.0
-margin_bottom = 850.0
+[node name="Element234" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 550.0
+margin_right = 650.0
+margin_bottom = 600.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2719,11 +3071,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element267" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 700.0
-margin_right = 950.0
-margin_bottom = 750.0
+[node name="Element235" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 550.0
+margin_right = 700.0
+margin_bottom = 600.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2732,9 +3084,9 @@ __meta__ = {
 }
 
 [node name="Element268" type="TextureRect" parent="."]
-margin_left = 950.0
+margin_left = 1000.0
 margin_top = 700.0
-margin_right = 1000.0
+margin_right = 1050.0
 margin_bottom = 750.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -2744,10 +3096,11 @@ __meta__ = {
 }
 
 [node name="Element269" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 750.0
-margin_right = 1150.0
-margin_bottom = 850.0
+margin_left = 1000.0
+margin_top = 650.0
+margin_right = 1050.0
+margin_bottom = 700.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2756,10 +3109,11 @@ __meta__ = {
 }
 
 [node name="Element270" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 750.0
-margin_right = 1200.0
-margin_bottom = 800.0
+margin_left = 900.0
+margin_top = 650.0
+margin_right = 1000.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2768,10 +3122,10 @@ __meta__ = {
 }
 
 [node name="Element271" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 800.0
-margin_right = 1200.0
-margin_bottom = 850.0
+margin_left = 1100.0
+margin_top = 700.0
+margin_right = 1150.0
+margin_bottom = 750.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -2780,9 +3134,9 @@ __meta__ = {
 }
 
 [node name="Element272" type="TextureRect" parent="."]
-margin_left = 1100.0
+margin_left = 800.0
 margin_top = 700.0
-margin_right = 1150.0
+margin_right = 850.0
 margin_bottom = 750.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -2792,682 +3146,10 @@ __meta__ = {
 }
 
 [node name="Element273" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 700.0
-margin_right = 1200.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element274" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 700.0
-margin_right = 650.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element275" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 700.0
-margin_right = 700.0
-margin_bottom = 750.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element276" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 800.0
-margin_right = 850.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element277" type="TextureRect" parent="."]
 margin_left = 850.0
-margin_top = 800.0
+margin_top = 700.0
 margin_right = 900.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element278" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 750.0
-margin_right = 1050.0
-margin_bottom = 800.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element279" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 750.0
-margin_right = 1100.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element280" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 800.0
-margin_right = 1050.0
-margin_bottom = 850.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element244" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 200.0
-margin_right = 1000.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element245" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 250.0
-margin_right = 1000.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element246" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 200.0
-margin_right = 1200.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element247" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 250.0
-margin_right = 1050.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element248" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 250.0
-margin_right = 1100.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element249" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 300.0
-margin_right = 1100.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element250" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 200.0
-margin_right = 1050.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element251" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 200.0
-margin_right = 1100.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element252" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 300.0
-margin_right = 1000.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element253" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 250.0
-margin_right = 1150.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element254" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 250.0
-margin_right = 1200.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element255" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 300.0
-margin_right = 1150.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element87" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 350.0
-margin_right = 850.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element88" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 350.0
-margin_right = 900.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element89" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 350.0
-margin_right = 950.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element90" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 350.0
-margin_right = 1000.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element92" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 350.0
-margin_right = 1150.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element93" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 350.0
-margin_right = 1200.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element91" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 350.0
-margin_right = 1100.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element86" type="TextureRect" parent="."]
-margin_left = 700.0
-margin_top = 350.0
-margin_right = 800.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element64" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 200.0
-margin_right = 700.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element61" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 300.0
-margin_right = 550.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element62" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 250.0
-margin_right = 600.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element210" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 100.0
-margin_right = 150.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element211" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 100.0
-margin_right = 200.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element212" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 150.0
-margin_right = 200.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element213" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 100.0
-margin_right = 250.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element214" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 100.0
-margin_right = 300.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element215" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 150.0
-margin_right = 300.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element216" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 100.0
-margin_right = 400.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element217" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 100.0
-margin_right = 450.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element218" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 100.0
-margin_right = 500.0
-margin_bottom = 150.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element219" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 150.0
-margin_right = 500.0
-margin_bottom = 200.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element220" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 200.0
-margin_right = 200.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element221" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 250.0
-margin_right = 150.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element222" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 250.0
-margin_right = 250.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element223" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 300.0
-margin_right = 250.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element224" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 250.0
-margin_right = 300.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element225" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 200.0
-margin_right = 350.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element226" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 200.0
-margin_right = 450.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element227" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 250.0
-margin_right = 350.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element228" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 250.0
-margin_right = 400.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element229" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 250.0
-margin_right = 450.0
-margin_bottom = 300.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element230" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 300.0
-margin_right = 400.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element231" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 300.0
-margin_right = 450.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element232" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 200.0
-margin_right = 500.0
-margin_bottom = 250.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element233" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 250.0
-margin_right = 500.0
-margin_bottom = 350.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element234" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 350.0
-margin_right = 150.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element235" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 350.0
-margin_right = 200.0
-margin_bottom = 400.0
+margin_bottom = 750.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3476,10 +3158,10 @@ __meta__ = {
 }
 
 [node name="Element236" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 350.0
-margin_right = 250.0
-margin_bottom = 400.0
+margin_left = 700.0
+margin_top = 600.0
+margin_right = 750.0
+margin_bottom = 650.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3487,11 +3169,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element237" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 350.0
-margin_right = 300.0
-margin_bottom = 400.0
+[node name="Element231" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 600.0
+margin_right = 550.0
+margin_bottom = 650.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3499,23 +3182,135 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element238" type="TextureRect" parent="."]
+[node name="Element264" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 650.0
+margin_right = 800.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element265" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 650.0
+margin_right = 850.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element266" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 650.0
+margin_right = 900.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element267" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 700.0
+margin_right = 750.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element256" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 650.0
+margin_right = 550.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element257" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 700.0
+margin_right = 550.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element258" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 650.0
+margin_right = 600.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element259" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 700.0
+margin_right = 600.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element106" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 300.0
+margin_right = 400.0
+margin_bottom = 350.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element127" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 300.0
+margin_right = 450.0
+margin_bottom = 350.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element128" type="TextureRect" parent="."]
 margin_left = 400.0
 margin_top = 350.0
-margin_right = 450.0
-margin_bottom = 400.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element239" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 350.0
 margin_right = 500.0
-margin_bottom = 400.0
+margin_bottom = 450.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3523,8 +3318,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element240" type="TextureRect" parent="."]
-margin_left = 300.0
+[node name="Element129" type="TextureRect" parent="."]
+margin_left = 350.0
 margin_top = 350.0
 margin_right = 400.0
 margin_bottom = 400.0
@@ -3535,11 +3330,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element241" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 200.0
-margin_right = 300.0
-margin_bottom = 250.0
+[node name="Element130" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 400.0
+margin_right = 400.0
+margin_bottom = 450.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3547,10 +3342,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element242" type="TextureRect" parent="."]
-margin_left = 100.0
+[node name="Element131" type="TextureRect" parent="."]
+margin_left = 450.0
 margin_top = 300.0
-margin_right = 150.0
+margin_right = 500.0
 margin_bottom = 350.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -3559,11 +3354,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element243" type="TextureRect" parent="."]
-margin_left = 150.0
-margin_top = 250.0
-margin_right = 200.0
-margin_bottom = 350.0
+[node name="Element132" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 450.0
+margin_right = 450.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3571,11 +3367,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element57" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 250.0
-margin_right = 100.0
-margin_bottom = 350.0
+[node name="Element224" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 600.0
+margin_right = 400.0
+margin_bottom = 650.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3583,10 +3379,74 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element79" type="TextureRect" parent="."]
+[node name="Element225" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 600.0
+margin_right = 450.0
+margin_bottom = 650.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element226" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 550.0
+margin_right = 350.0
+margin_bottom = 650.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element227" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 550.0
+margin_right = 400.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element250" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 650.0
+margin_right = 450.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element260" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 650.0
+margin_right = 750.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element351" type="TextureRect" parent="."]
+margin_left = 750.0
 margin_top = 900.0
-margin_right = 50.0
-margin_bottom = 950.0
+margin_right = 800.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3594,10 +3454,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element304" type="TextureRect" parent="."]
+[node name="Element352" type="TextureRect" parent="."]
+margin_left = 700.0
 margin_top = 950.0
-margin_right = 50.0
+margin_right = 750.0
 margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3605,371 +3467,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element305" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 900.0
-margin_right = 550.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element306" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 900.0
-margin_right = 650.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element307" type="TextureRect" parent="."]
-margin_left = 600.0
-margin_top = 950.0
-margin_right = 650.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element308" type="TextureRect" parent="."]
-margin_left = 650.0
-margin_top = 900.0
-margin_right = 700.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element309" type="TextureRect" parent="."]
+[node name="Element353" type="TextureRect" parent="."]
 margin_left = 700.0
 margin_top = 900.0
 margin_right = 750.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element310" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 900.0
-margin_right = 800.0
 margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element311" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 900.0
-margin_right = 850.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element312" type="TextureRect" parent="."]
-margin_left = 750.0
-margin_top = 950.0
-margin_right = 800.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element313" type="TextureRect" parent="."]
-margin_left = 800.0
-margin_top = 950.0
-margin_right = 850.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element314" type="TextureRect" parent="."]
-margin_left = 850.0
-margin_top = 900.0
-margin_right = 900.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element315" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 900.0
-margin_right = 950.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element316" type="TextureRect" parent="."]
-margin_left = 900.0
-margin_top = 950.0
-margin_right = 950.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element317" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 900.0
-margin_right = 1000.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element318" type="TextureRect" parent="."]
-margin_left = 1000.0
-margin_top = 900.0
-margin_right = 1050.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element319" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 900.0
-margin_right = 1100.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element320" type="TextureRect" parent="."]
-margin_left = 1050.0
-margin_top = 950.0
-margin_right = 1100.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element321" type="TextureRect" parent="."]
-margin_left = 950.0
-margin_top = 950.0
-margin_right = 1000.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element322" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 900.0
-margin_right = 1150.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element323" type="TextureRect" parent="."]
-margin_left = 1150.0
-margin_top = 900.0
-margin_right = 1200.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element324" type="TextureRect" parent="."]
-margin_left = 1100.0
-margin_top = 950.0
-margin_right = 1150.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element325" type="TextureRect" parent="."]
-margin_left = 500.0
-margin_top = 950.0
-margin_right = 550.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element326" type="TextureRect" parent="."]
-margin_left = 550.0
-margin_top = 900.0
-margin_right = 600.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element327" type="TextureRect" parent="."]
-margin_left = 100.0
-margin_top = 900.0
-margin_right = 150.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element328" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 900.0
-margin_right = 250.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element329" type="TextureRect" parent="."]
-margin_left = 200.0
-margin_top = 950.0
-margin_right = 250.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element330" type="TextureRect" parent="."]
-margin_left = 250.0
-margin_top = 900.0
-margin_right = 300.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element331" type="TextureRect" parent="."]
-margin_left = 300.0
-margin_top = 900.0
-margin_right = 350.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element332" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 900.0
-margin_right = 400.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element333" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 900.0
-margin_right = 450.0
-margin_bottom = 950.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element334" type="TextureRect" parent="."]
-margin_left = 350.0
-margin_top = 950.0
-margin_right = 400.0
-margin_bottom = 1000.0
-texture = ExtResource( 2 )
-stretch_mode = 1
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Element335" type="TextureRect" parent="."]
-margin_left = 400.0
-margin_top = 950.0
-margin_right = 450.0
-margin_bottom = 1000.0
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )
@@ -3978,9 +3480,9 @@ __meta__ = {
 }
 
 [node name="Element336" type="TextureRect" parent="."]
-margin_left = 450.0
-margin_top = 900.0
-margin_right = 500.0
+margin_left = 1100.0
+margin_top = 950.0
+margin_right = 1150.0
 margin_bottom = 1000.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -3990,6 +3492,721 @@ __meta__ = {
 }
 
 [node name="Element337" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 950.0
+margin_right = 1200.0
+margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element338" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 850.0
+margin_right = 1050.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element339" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 900.0
+margin_right = 1100.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element340" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 900.0
+margin_right = 1150.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element341" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 950.0
+margin_right = 1050.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element342" type="TextureRect" parent="."]
+margin_left = 1000.0
+margin_top = 900.0
+margin_right = 1050.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element261" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 650.0
+margin_right = 650.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element262" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 650.0
+margin_right = 700.0
+margin_bottom = 700.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element286" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 750.0
+margin_right = 500.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element287" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 800.0
+margin_right = 500.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element288" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 750.0
+margin_right = 550.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element289" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 750.0
+margin_right = 600.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element293" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 750.0
+margin_right = 800.0
+margin_bottom = 800.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element294" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 800.0
+margin_right = 700.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element295" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 800.0
+margin_right = 750.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element296" type="TextureRect" parent="."]
+margin_left = 750.0
+margin_top = 800.0
+margin_right = 800.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element343" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 900.0
+margin_right = 1000.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element344" type="TextureRect" parent="."]
+margin_left = 900.0
+margin_top = 850.0
+margin_right = 950.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element345" type="TextureRect" parent="."]
+margin_left = 950.0
+margin_top = 850.0
+margin_right = 1000.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element346" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 900.0
+margin_right = 900.0
+margin_bottom = 950.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element347" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 950.0
+margin_right = 900.0
+margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element348" type="TextureRect" parent="."]
+margin_left = 850.0
+margin_top = 850.0
+margin_right = 900.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element349" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 900.0
+margin_right = 850.0
+margin_bottom = 950.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element350" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 950.0
+margin_right = 850.0
+margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element290" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 750.0
+margin_right = 650.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element263" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 700.0
+margin_right = 700.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element251" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 700.0
+margin_right = 450.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element252" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 700.0
+margin_right = 500.0
+margin_bottom = 750.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element253" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 700.0
+margin_right = 350.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element254" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 700.0
+margin_right = 400.0
+margin_bottom = 750.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element255" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 650.0
+margin_right = 350.0
+margin_bottom = 700.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element324" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 900.0
+margin_right = 600.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element325" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 850.0
+margin_right = 650.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element326" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 950.0
+margin_right = 550.0
+margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element327" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 950.0
+margin_right = 450.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element133" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 450.0
+margin_right = 500.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element278" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 750.0
+margin_right = 300.0
+margin_bottom = 850.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element279" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 800.0
+margin_right = 250.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element280" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 750.0
+margin_right = 350.0
+margin_bottom = 800.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element281" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 800.0
+margin_right = 350.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element282" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 800.0
+margin_right = 400.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element283" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 750.0
+margin_right = 400.0
+margin_bottom = 800.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element309" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 850.0
+margin_right = 450.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element310" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 850.0
+margin_right = 500.0
+margin_bottom = 900.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element328" type="TextureRect" parent="."]
+margin_left = 600.0
+margin_top = 900.0
+margin_right = 700.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element329" type="TextureRect" parent="."]
+margin_left = 700.0
+margin_top = 850.0
+margin_right = 800.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element330" type="TextureRect" parent="."]
+margin_left = 800.0
+margin_top = 850.0
+margin_right = 850.0
+margin_bottom = 900.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element331" type="TextureRect" parent="."]
+margin_left = 650.0
+margin_top = 850.0
+margin_right = 700.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element333" type="TextureRect" parent="."]
+margin_left = 1100.0
+margin_top = 850.0
+margin_right = 1200.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element334" type="TextureRect" parent="."]
+margin_left = 1150.0
+margin_top = 900.0
+margin_right = 1200.0
+margin_bottom = 950.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element335" type="TextureRect" parent="."]
+margin_left = 1050.0
+margin_top = 850.0
+margin_right = 1100.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element332" type="TextureRect" parent="."]
+margin_left = 550.0
+margin_top = 950.0
+margin_right = 600.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element311" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 900.0
+margin_right = 450.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element312" type="TextureRect" parent="."]
+margin_left = 450.0
+margin_top = 900.0
+margin_right = 500.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element313" type="TextureRect" parent="."]
+margin_left = 500.0
+margin_top = 900.0
+margin_right = 550.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element314" type="TextureRect" parent="."]
+margin_left = 300.0
+margin_top = 850.0
+margin_right = 350.0
+margin_bottom = 900.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element315" type="TextureRect" parent="."]
+margin_left = 350.0
+margin_top = 850.0
+margin_right = 400.0
+margin_bottom = 900.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element316" type="TextureRect" parent="."]
+margin_left = 150.0
+margin_top = 900.0
+margin_right = 200.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element317" type="TextureRect" parent="."]
 margin_left = 100.0
 margin_top = 950.0
 margin_right = 150.0
@@ -4001,10 +4218,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element338" type="TextureRect" parent="."]
-margin_left = 150.0
+[node name="Element318" type="TextureRect" parent="."]
+margin_left = 200.0
 margin_top = 900.0
-margin_right = 200.0
+margin_right = 250.0
+margin_bottom = 950.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element319" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 950.0
+margin_right = 250.0
 margin_bottom = 1000.0
 texture = ExtResource( 2 )
 stretch_mode = 1
@@ -4013,11 +4242,62 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Element339" type="TextureRect" parent="."]
-margin_left = 50.0
-margin_top = 900.0
-margin_right = 100.0
+[node name="Element320" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 950.0
+margin_right = 300.0
 margin_bottom = 1000.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element321" type="TextureRect" parent="."]
+margin_left = 250.0
+margin_top = 900.0
+margin_right = 300.0
+margin_bottom = 950.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element284" type="TextureRect" parent="."]
+margin_left = 400.0
+margin_top = 800.0
+margin_right = 450.0
+margin_bottom = 850.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element285" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 750.0
+margin_right = 250.0
+margin_bottom = 800.0
+rect_pivot_offset = Vector2( 28, 27 )
+texture = ExtResource( 2 )
+stretch_mode = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Element107" type="TextureRect" parent="."]
+margin_left = 200.0
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 350.0
+rect_pivot_offset = Vector2( 28, 27 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 script = ExtResource( 1 )

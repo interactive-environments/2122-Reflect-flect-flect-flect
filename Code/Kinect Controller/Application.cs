@@ -2,6 +2,7 @@
 using System;
 using System.IO.MemoryMappedFiles;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 
@@ -10,13 +11,20 @@ Console.WriteLine(@"    ____  ______________    __________________
   / /_/ / __/ / /_  / /   / __/ / /     / /     
  / _, _/ /___/ __/ / /___/ /___/ /___  / /     
 /_/ |_/_____/_/   /_____/_____/\____/ /_/ -flect-flect-flect
-                                              
+											  
 Kinect Controller");
 
 // Find the first connected sensor
-using var sensor = KinectSensor.KinectSensors.First(sensor => sensor.Status == KinectStatus.Connected);
+Console.Write("Finding Kinect sensor..");
+do
+{
+	Console.Write(".");
+	Thread.Sleep(1000);
+}
+while (KinectSensor.KinectSensors.Count == 0 || KinectSensor.KinectSensors[0].Status != KinectStatus.Connected);
 
-Console.WriteLine("Found sensor!");
+using var sensor = KinectSensor.KinectSensors[0];
+Console.WriteLine("\nFound sensor!");
 
 // Start the depth stream
 sensor.DepthStream.Enable(DepthImageFormat.Resolution640x480Fps30);

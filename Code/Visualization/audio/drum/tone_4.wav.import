@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tone_4.wav-2de1e9ad18b2ddf162c2f740b5b59792.sample"
+
+[deps]
+
+source_file="res://audio/drum/tone_4.wav"
+dest_files=[ "res://.import/tone_4.wav-2de1e9ad18b2ddf162c2f740b5b59792.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

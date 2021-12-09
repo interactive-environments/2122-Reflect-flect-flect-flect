@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tone_6.wav-59b7c1540597220c2bf049c902544d59.sample"
+
+[deps]
+
+source_file="res://audio/synth/tone_6.wav"
+dest_files=[ "res://.import/tone_6.wav-59b7c1540597220c2bf049c902544d59.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
