@@ -1,8 +1,10 @@
-extends Node
+extends Node2D
 
+
+export var topics: PoolStringArray
 
 var index := 0
-var count := 3
+var count: int
 
 var offset := 0.0
 
@@ -13,6 +15,37 @@ var pos := Vector2()
 
 var calc_pitch := 0
 var pitch := 0.0
+
+
+# -
+func _ready() -> void:
+	var covers := $Cover/Images
+	var content := $Content/Images
+	
+	assert(topics.size() != 0)
+	
+	count = topics.size()
+	
+	topics.push_back(topics[0])
+	
+	for i in range(topics.size()):
+		var topic: String = topics[i].to_lower()
+		
+		var cover_sprite := Sprite.new()
+		cover_sprite.texture = load("images/" + topic + "/cover.png")
+		covers.add_child(cover_sprite)
+		cover_sprite.name = topic.capitalize()
+		cover_sprite.position = Vector2(1200 * i, 0)
+		cover_sprite.centered = false
+		
+		var content_sprite := Sprite.new()
+		content_sprite.texture = load("images/" + topic + "/content.png")
+		content.add_child(content_sprite)
+		cover_sprite.name = topic.capitalize()
+		content_sprite.position = Vector2(1200 * i, 0)
+		content_sprite.centered = false
+	
+	topics.resize(topics.size() - 1)
 
 
 # -

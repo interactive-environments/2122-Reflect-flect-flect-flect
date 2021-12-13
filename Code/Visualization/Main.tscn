@@ -1,23 +1,16 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://grid/grid_shader.gdshader" type="Shader" id=1]
 [ext_resource path="res://grid/Grid.tscn" type="PackedScene" id=2]
-[ext_resource path="res://images/cover_blanca.png" type="Texture" id=3]
-[ext_resource path="res://images/cover.png" type="Texture" id=4]
-[ext_resource path="res://images/content_3.png" type="Texture" id=5]
-[ext_resource path="res://images/cover_astrology.png" type="Texture" id=6]
-[ext_resource path="res://grid/Content.gd" type="Script" id=7]
-[ext_resource path="res://kinect/KinectViewer.gd" type="Script" id=8]
-[ext_resource path="res://grid/ContentHandler.gd" type="Script" id=9]
-[ext_resource path="res://kinect/ViewerPanel.gd" type="Script" id=10]
-[ext_resource path="res://images/content_blanca.png" type="Texture" id=11]
-[ext_resource path="res://images/content_astrology.png" type="Texture" id=12]
+[ext_resource path="res://debug_o_matic_3000/DebugOMatic3000.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main.gd" type="Script" id=5]
+[ext_resource path="res://grid/Images.gd" type="Script" id=7]
 
 [sub_resource type="ViewportTexture" id=7]
-viewport_path = NodePath("ContentViewport")
+viewport_path = NodePath("Content")
 
 [sub_resource type="ViewportTexture" id=8]
-viewport_path = NodePath("CoverViewport")
+viewport_path = NodePath("Cover")
 
 [sub_resource type="ShaderMaterial" id=6]
 resource_local_to_scene = true
@@ -26,73 +19,27 @@ shader_param/width = 5.0
 shader_param/cover_texture = SubResource( 8 )
 shader_param/content_texture = SubResource( 7 )
 
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.290196, 0.301961, 0.396078, 1 )
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
 [node name="Main" type="Node2D"]
+script = ExtResource( 5 )
+topics = PoolStringArray( "astrology", "birds", "blanca", "koopman" )
 
-[node name="CoverViewport" type="Viewport" parent="."]
+[node name="Cover" type="Viewport" parent="."]
 size = Vector2( 1200, 1000 )
 usage = 0
 render_target_v_flip = true
 render_target_update_mode = 3
 
-[node name="Node2D" type="Node2D" parent="CoverViewport"]
+[node name="Images" type="Node2D" parent="Cover"]
 script = ExtResource( 7 )
 
-[node name="Cover1" type="Sprite" parent="CoverViewport/Node2D"]
-texture = ExtResource( 6 )
-centered = false
-
-[node name="Cover2" type="Sprite" parent="CoverViewport/Node2D"]
-position = Vector2( 1200, 0 )
-texture = ExtResource( 3 )
-centered = false
-
-[node name="Cover3" type="Sprite" parent="CoverViewport/Node2D"]
-position = Vector2( 2400, 0 )
-texture = ExtResource( 4 )
-centered = false
-
-[node name="Cover12" type="Sprite" parent="CoverViewport/Node2D"]
-position = Vector2( 3600, 0 )
-texture = ExtResource( 6 )
-centered = false
-
-[node name="ContentHandler" type="Node" parent="."]
-script = ExtResource( 9 )
-
-[node name="ContentViewport" type="Viewport" parent="."]
+[node name="Content" type="Viewport" parent="."]
 size = Vector2( 1200, 1000 )
 usage = 0
 render_target_v_flip = true
 render_target_update_mode = 3
 
-[node name="Content" type="Node2D" parent="ContentViewport"]
+[node name="Images" type="Node2D" parent="Content"]
 script = ExtResource( 7 )
-
-[node name="Content1" type="Sprite" parent="ContentViewport/Content"]
-texture = ExtResource( 12 )
-centered = false
-
-[node name="Content2" type="Sprite" parent="ContentViewport/Content"]
-position = Vector2( 1200, 0 )
-texture = ExtResource( 11 )
-centered = false
-
-[node name="Content3" type="Sprite" parent="ContentViewport/Content"]
-position = Vector2( 2400, 0 )
-texture = ExtResource( 5 )
-centered = false
-
-[node name="Content12" type="Sprite" parent="ContentViewport/Content"]
-position = Vector2( 3600, 0 )
-texture = ExtResource( 12 )
-centered = false
 
 [node name="MainViewport" type="ViewportContainer" parent="."]
 material = SubResource( 6 )
@@ -116,40 +63,4 @@ render_target_update_mode = 3
 
 [node name="Grid" parent="MainViewport/Viewport" instance=ExtResource( 2 )]
 
-[node name="ViewerPanel" type="Panel" parent="."]
-visible = false
-margin_left = 150.0
-margin_top = 190.0
-margin_right = 1050.0
-margin_bottom = 710.0
-custom_styles/panel = SubResource( 3 )
-script = ExtResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TitleLabel" type="Label" parent="ViewerPanel"]
-margin_top = 6.0
-margin_right = 900.0
-margin_bottom = 20.0
-text = "debug-o-matic 3000"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="KinectViewer" type="Node2D" parent="ViewerPanel"]
-position = Vector2( 20, 20 )
-script = ExtResource( 8 )
-
-[node name="KinectLabel" type="Label" parent="ViewerPanel"]
-visible = false
-margin_right = 340.0
-margin_bottom = 260.0
-rect_scale = Vector2( 2, 2 )
-text = "Kinect not found."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="DebugOMatic3000" parent="." instance=ExtResource( 3 )]

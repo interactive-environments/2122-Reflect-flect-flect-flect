@@ -21,7 +21,7 @@ do
 	Console.Write(".");
 	Thread.Sleep(1000);
 }
-while (KinectSensor.KinectSensors.Count == 0 || KinectSensor.KinectSensors[0].Status != KinectStatus.Connected);
+while (KinectSensor.KinectSensors.FirstOrDefault()?.Status != KinectStatus.Connected);
 
 using var sensor = KinectSensor.KinectSensors[0];
 Console.WriteLine("\nFound sensor!");
@@ -80,11 +80,11 @@ void Process(DepthImagePixel[] input, byte[] output)
 		if (x % squareSize == 0 && y % squareSize == 0)
 		{
 			// Process the input
-			output[y * squareDimensions.X + x] =
-				(!pixel.IsKnownDepth || pixel.Depth > 2500) ? 
-					(byte)0
-				:
-					(pixel.Depth > 1500 ? (byte)1 : (byte)2);
+			var result = 0;
+			result += pixel.Depth < 3500 ? 1 : 0;
+			result += pixel.Depth < 1500 ? 1 : 0;
+
+			output[y * squareDimensions.X + x] = (byte)(pixel.IsKnownDepth ? result : 0);
 		}
 	});
 

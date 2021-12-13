@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/content_blanca.png-897767785d34088eb462495694060456.stex"
+path="res://.import/content.png-73cf9c610a50b9a3a66ebbd67a9b86b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/content_blanca.png"
-dest_files=[ "res://.import/content_blanca.png-897767785d34088eb462495694060456.stex" ]
+source_file="res://images/astrology/content.png"
+dest_files=[ "res://.import/content.png-73cf9c610a50b9a3a66ebbd67a9b86b8.stex" ]
 
 [params]
 

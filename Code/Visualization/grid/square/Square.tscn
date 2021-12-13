@@ -1,0 +1,218 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://audio/synth/tone_1.wav" type="AudioStream" id=1]
+[ext_resource path="res://audio/synth/tone_4.wav" type="AudioStream" id=2]
+[ext_resource path="res://audio/synth/tone_2.wav" type="AudioStream" id=3]
+[ext_resource path="res://audio/synth/tone_8.wav" type="AudioStream" id=4]
+[ext_resource path="res://audio/synth/tone_6.wav" type="AudioStream" id=5]
+[ext_resource path="res://audio/synth/tone_5.wav" type="AudioStream" id=6]
+[ext_resource path="res://audio/glass/tone_1.wav" type="AudioStream" id=7]
+[ext_resource path="res://audio/glass/tone_5.wav" type="AudioStream" id=8]
+[ext_resource path="res://audio/glass/tone_6.wav" type="AudioStream" id=9]
+[ext_resource path="res://audio/glass/tone_4.wav" type="AudioStream" id=10]
+[ext_resource path="res://audio/glass/tone_8.wav" type="AudioStream" id=11]
+[ext_resource path="res://audio/drum/tone_4.wav" type="AudioStream" id=12]
+[ext_resource path="res://audio/glass/tone_3.wav" type="AudioStream" id=13]
+[ext_resource path="res://audio/drum/tone_7.wav" type="AudioStream" id=14]
+[ext_resource path="res://audio/drum/tone_5.wav" type="AudioStream" id=15]
+[ext_resource path="res://audio/drum/tone_6.wav" type="AudioStream" id=16]
+[ext_resource path="res://audio/glass/tone_2.wav" type="AudioStream" id=17]
+[ext_resource path="res://audio/synth/tone_7.wav" type="AudioStream" id=18]
+[ext_resource path="res://audio/synth/tone_3.wav" type="AudioStream" id=19]
+[ext_resource path="res://audio/glass/tone_7.wav" type="AudioStream" id=20]
+[ext_resource path="res://audio/drum/tone_8.wav" type="AudioStream" id=21]
+[ext_resource path="res://audio/string/tone_1.wav" type="AudioStream" id=22]
+[ext_resource path="res://audio/string/tone_6.wav" type="AudioStream" id=23]
+[ext_resource path="res://audio/string/tone_8.wav" type="AudioStream" id=24]
+[ext_resource path="res://audio/string/tone_2.wav" type="AudioStream" id=25]
+[ext_resource path="res://audio/string/tone_3.wav" type="AudioStream" id=26]
+[ext_resource path="res://audio/drum/tone_2.wav" type="AudioStream" id=27]
+[ext_resource path="res://audio/string/tone_5.wav" type="AudioStream" id=28]
+[ext_resource path="res://audio/string/tone_4.wav" type="AudioStream" id=29]
+[ext_resource path="res://audio/drum/tone_1.wav" type="AudioStream" id=30]
+[ext_resource path="res://audio/drum/tone_3.wav" type="AudioStream" id=31]
+[ext_resource path="res://audio/string/tone_7.wav" type="AudioStream" id=32]
+[ext_resource path="res://grid/square/Square.gd" type="Script" id=33]
+[ext_resource path="res://grid/square/square.png" type="Texture" id=34]
+[ext_resource path="res://grid/square/Sounds.gd" type="Script" id=35]
+
+[node name="Square" type="TextureRect"]
+margin_right = 50.0
+margin_bottom = 50.0
+texture = ExtResource( 34 )
+stretch_mode = 1
+script = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sounds" type="Node" parent="."]
+script = ExtResource( 35 )
+
+[node name="Synth" type="Node" parent="Sounds"]
+
+[node name="Note1" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 1 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note2" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 3 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note3" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 19 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note4" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 2 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note5" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 6 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note6" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 5 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note7" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 18 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note8" type="AudioStreamPlayer" parent="Sounds/Synth"]
+stream = ExtResource( 4 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Glass" type="Node" parent="Sounds"]
+
+[node name="Note1" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 7 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note2" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 17 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note3" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 13 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note4" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 10 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note5" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 8 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note6" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 9 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note7" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 20 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note8" type="AudioStreamPlayer" parent="Sounds/Glass"]
+stream = ExtResource( 11 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Drum" type="Node" parent="Sounds"]
+
+[node name="Note1" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 30 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note2" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 27 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note3" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 31 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note4" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 12 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note5" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 15 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note6" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 16 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note7" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 14 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="Note8" type="AudioStreamPlayer" parent="Sounds/Drum"]
+stream = ExtResource( 21 )
+volume_db = -35.0
+pitch_scale = 1.5
+
+[node name="String" type="Node" parent="Sounds"]
+
+[node name="Note1" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 22 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note2" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 25 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note3" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 26 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note4" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 29 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note5" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 28 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note6" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 23 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note7" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 32 )
+volume_db = -26.0
+pitch_scale = 1.5
+
+[node name="Note8" type="AudioStreamPlayer" parent="Sounds/String"]
+stream = ExtResource( 24 )
+volume_db = -26.0
+pitch_scale = 1.5

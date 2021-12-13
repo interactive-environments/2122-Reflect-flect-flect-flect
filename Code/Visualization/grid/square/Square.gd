@@ -14,9 +14,6 @@ var prev_target_scale: float
 func _ready() -> void:
 	rect_position = start_position + start_size / 2
 	rect_scale = Vector2()
-	
-	sounds = preload("res://grid/ElementSounds.tscn").instance()
-	add_child(sounds)
 
 
 # -
@@ -38,7 +35,7 @@ func _process(_delta: float) -> void:
 			target_scale = 0.0
 	
 	if not is_equal_approx(prev_target_scale, target_scale):
-		sounds.play()
+		$Sounds.play()
 		prev_target_scale = target_scale
 	
 	# animate scale

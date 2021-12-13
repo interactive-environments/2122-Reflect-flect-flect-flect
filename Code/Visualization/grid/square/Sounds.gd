@@ -4,8 +4,6 @@ extends Node
 export(String, "Synth", "Glass", "Drum", "String") var instrument := "Synth"
 var rng := RandomNumberGenerator.new()
 
-onready var content_handler := get_tree().current_scene.get_node("ContentHandler")
-
 export var change_pitch := true
 export var starting_frequency := 1.0
 
@@ -16,6 +14,11 @@ var pitch := -1.0
 func _ready() -> void:
 	rng.randomize()
 	
+	call_deferred("_initialize_panning")
+
+
+# initializes panning based on horizontal location
+func _initialize_panning() -> void:
 	# set panning
 	var centre_x: float = (get_parent().start_position + get_parent().start_size / 2).x
 	var bus: String = ["LL", "L", "M", "R", "RR"][int(centre_x / 240)]
@@ -30,11 +33,12 @@ func get_notes() -> Array:
 	return get_node(instrument).get_children()
 
 
+# -
 func _process(_delta: float) -> void:
 	if not change_pitch:
 		return
 	
-	var new_pitch: float = content_handler.pitch
+	var new_pitch: float = get_tree().current_scene.pitch
 	
 	if not is_equal_approx(pitch, new_pitch):
 		for note in get_notes():

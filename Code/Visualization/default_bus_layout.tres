@@ -25,19 +25,19 @@ pre_gain = 2.0
 
 [sub_resource type="AudioEffectPanner" id=5]
 resource_name = "Panner"
-pan = -0.9
+pan = -1.0
 
 [sub_resource type="AudioEffectPanner" id=6]
 resource_name = "Panner"
-pan = -0.4
+pan = -0.5
 
 [sub_resource type="AudioEffectPanner" id=7]
 resource_name = "Panner"
-pan = 0.4
+pan = 0.5
 
 [sub_resource type="AudioEffectPanner" id=8]
 resource_name = "Panner"
-pan = 0.9
+pan = 1.0
 
 [resource]
 bus/0/effect/0/effect = SubResource( 1 )
