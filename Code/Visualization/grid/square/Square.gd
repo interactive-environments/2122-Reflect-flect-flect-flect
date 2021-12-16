@@ -6,8 +6,10 @@ onready var start_size := rect_size
 
 var timer := 0
 
+var reset_timer := 0
+
 var sounds: Node
-var prev_target_scale: float
+var prev_pixel_sound := 0
 
 
 # -
@@ -25,6 +27,10 @@ func _process(_delta: float) -> void:
 	var scale := rect_scale.x
 	var target_scale := 1.0
 	
+	if reset_timer > 0:
+		pixel = 0
+		reset_timer -= 1
+	
 	if pixel >= 1:
 		timer = 20
 	else:
@@ -34,9 +40,11 @@ func _process(_delta: float) -> void:
 			timer = 0
 			target_scale = 0.0
 	
-	if not is_equal_approx(prev_target_scale, target_scale):
+	# play sound if necessary
+	var pixel_sound = 0 if pixel == 2 else pixel
+	if pixel_sound != prev_pixel_sound:
 		$Sounds.play()
-		prev_target_scale = target_scale
+		prev_pixel_sound = pixel_sound
 	
 	# animate scale
 	scale = lerp(scale, target_scale, 0.15)
@@ -44,3 +52,7 @@ func _process(_delta: float) -> void:
 	# centre
 	rect_position = lerp(start_position + start_size / 2, start_position, scale)
 	rect_scale = Vector2(scale, scale)
+
+
+func reset() -> void:
+	reset_timer = 2 * 60

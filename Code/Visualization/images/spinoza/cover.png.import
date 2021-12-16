@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cover.png-5b45b10066cd6b71d3194eb861758d54.stex"
+path="res://.import/cover.png-e7143c57f260d5ccb4f10b60cace7c95.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/blanca/cover.png"
-dest_files=[ "res://.import/cover.png-5b45b10066cd6b71d3194eb861758d54.stex" ]
+source_file="res://images/spinoza/cover.png"
+dest_files=[ "res://.import/cover.png-e7143c57f260d5ccb4f10b60cace7c95.stex" ]
 
 [params]
 

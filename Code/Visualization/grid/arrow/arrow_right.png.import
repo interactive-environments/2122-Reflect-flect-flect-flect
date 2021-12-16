@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cover.png-fc2a6eb229f66b03b5fae6fa4d7ec1e9.stex"
+path="res://.import/arrow_right.png-78e0ba0b2202d5907b84c0b916cd359d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/astrology/cover.png"
-dest_files=[ "res://.import/cover.png-fc2a6eb229f66b03b5fae6fa4d7ec1e9.stex" ]
+source_file="res://grid/arrow/arrow_right.png"
+dest_files=[ "res://.import/arrow_right.png-78e0ba0b2202d5907b84c0b916cd359d.stex" ]
 
 [params]
 

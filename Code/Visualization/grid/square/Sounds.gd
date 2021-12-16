@@ -1,11 +1,20 @@
 extends Node
 
 
-export(String, "Synth", "Glass", "Drum", "String") var instrument := "Synth"
+var instruments := [
+	"Synth",
+	"Glass",
+	#"Drum",
+	"String"
+]
+
+var instrument := "Synth"
 var rng := RandomNumberGenerator.new()
 
 export var change_pitch := true
 export var starting_frequency := 1.0
+
+var change_instrument_timer := 0.0
 
 var pitch := -1.0
 
@@ -34,7 +43,15 @@ func get_notes() -> Array:
 
 
 # -
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
+	# go to next instrument after 20 seconds
+	change_instrument_timer += delta
+	if change_instrument_timer > 20:
+		var current_instrument_index := instruments.find(instrument)
+		current_instrument_index = (current_instrument_index + 1) % instruments.size()
+		
+		instrument = instruments[current_instrument_index]
+	
 	if not change_pitch:
 		return
 	

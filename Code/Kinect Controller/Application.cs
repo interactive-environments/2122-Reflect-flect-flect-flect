@@ -81,7 +81,7 @@ void Process(DepthImagePixel[] input, byte[] output)
 		{
 			// Process the input
 			var result = 0;
-			result += pixel.Depth < 3500 ? 1 : 0;
+			result += pixel.Depth < 2500 ? 1 : 0;
 			result += pixel.Depth < 1500 ? 1 : 0;
 
 			output[y * squareDimensions.X + x] = (byte)(pixel.IsKnownDepth ? result : 0);
