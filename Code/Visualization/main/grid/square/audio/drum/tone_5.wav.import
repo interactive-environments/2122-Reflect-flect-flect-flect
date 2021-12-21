@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tone_5.wav-963a00edfdce7373df70761c5a3e117e.sample"
+
+[deps]
+
+source_file="res://main/grid/square/audio/drum/tone_5.wav"
+dest_files=[ "res://.import/tone_5.wav-963a00edfdce7373df70761c5a3e117e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

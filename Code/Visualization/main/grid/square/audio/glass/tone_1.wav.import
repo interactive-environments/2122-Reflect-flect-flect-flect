@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tone_1.wav-822a4267372b66b6f0fc4ed0d1424e00.sample"
+
+[deps]
+
+source_file="res://main/grid/square/audio/glass/tone_1.wav"
+dest_files=[ "res://.import/tone_1.wav-822a4267372b66b6f0fc4ed0d1424e00.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
