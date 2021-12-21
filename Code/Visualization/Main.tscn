@@ -149,7 +149,6 @@ shader_param/content_texture = SubResource( 7 )
 [node name="Main" type="Node2D"]
 position = Vector2( -1, 0 )
 script = ExtResource( 5 )
-topics = PoolStringArray( "zodiac", "birds", "spinoza", "koopman", "illegal" )
 
 [node name="Embodiment" type="Node2D" parent="."]
 script = ExtResource( 9 )
