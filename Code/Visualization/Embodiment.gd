@@ -24,6 +24,15 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
+	# get left and right pressed
+	left_pressed = (KinectHandler.get_pixel(10, 0) == 2)
+	right_pressed = (KinectHandler.get_pixel(630, 0) == 2)
+	
+	if left_pressed and right_pressed:
+		left_pressed = false
+		right_pressed = false
+	
+	# handle pressing left
 	if left_pressed or left_time > 2:
 		if left_time > 2 and not left_prev_switch:
 			left_prev_switch = true
@@ -34,6 +43,7 @@ func _process(delta: float) -> void:
 		left_prev_switch = false
 		left_time /= 1.1
 	
+	# handle pressing right
 	if right_pressed or right_time > 2:
 		if right_time > 2 and not right_prev_switch:
 			right_prev_switch = true

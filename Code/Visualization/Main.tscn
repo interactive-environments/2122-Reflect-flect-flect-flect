@@ -2,7 +2,7 @@
 
 [ext_resource path="res://grid/grid_shader.gdshader" type="Shader" id=1]
 [ext_resource path="res://grid/Grid.tscn" type="PackedScene" id=2]
-[ext_resource path="res://debug_o_matic_3000/DebugOMatic3000.tscn" type="PackedScene" id=3]
+[ext_resource path="res://menu/Menu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Main.gd" type="Script" id=5]
 [ext_resource path="res://grid/arrow/arrow_right.png" type="Texture" id=6]
 [ext_resource path="res://grid/Images.gd" type="Script" id=7]
@@ -230,4 +230,10 @@ render_target_update_mode = 3
 
 [node name="Arrows" type="Node2D" parent="."]
 
-[node name="DebugOMatic3000" parent="." instance=ExtResource( 3 )]
+[node name="Menu" parent="." instance=ExtResource( 3 )]
+position = Vector2( 100, 100 )
+
+[node name="Main" parent="Menu" index="0"]
+disabled = true
+
+[editable path="Menu"]

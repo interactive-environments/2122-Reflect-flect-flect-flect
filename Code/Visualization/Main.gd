@@ -49,28 +49,16 @@ func _ready() -> void:
 
 
 # -
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	# handle sound effects
 	phaser_effect.depth = 0.5 + 0.5 * sin(float(OS.get_ticks_msec()) / 3000.0)
 	lowpass_effect.cutoff_hz = 1500 + 500 * sin(float(OS.get_ticks_msec()) / 4000.0)
 	
-	# get left and right pressed
-	var left_pressed = (KinectHandler.get_pixel(10, 0) == 2)
-	var right_pressed = (KinectHandler.get_pixel(630, 0) == 2)
-	
-	if left_pressed and right_pressed:
-		left_pressed = false
-		right_pressed = false
-	
-	# set embodiment activity
-	$Embodiment.left_pressed = left_pressed
-	$Embodiment.right_pressed = right_pressed
-	
 	# change offset and index based on input
-	if left_pressed:
+	if $Embodiment.left_pressed:
 		offset -= 5
 	
-	if right_pressed:
+	if $Embodiment.right_pressed:
 		offset += 5
 	
 	pos.x = lerp(pos.x, -1200 * index - offset, 0.05)

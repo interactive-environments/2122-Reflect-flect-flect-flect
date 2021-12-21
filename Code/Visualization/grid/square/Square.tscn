@@ -39,6 +39,7 @@
 [node name="Square" type="TextureRect"]
 margin_right = 50.0
 margin_bottom = 50.0
+mouse_filter = 2
 texture = ExtResource( 34 )
 stretch_mode = 1
 script = ExtResource( 33 )

@@ -16,12 +16,11 @@ Kinect Controller");
 
 // Find the first connected sensor
 Console.Write("Finding Kinect sensor..");
-do
+while (KinectSensor.KinectSensors.FirstOrDefault()?.Status != KinectStatus.Connected)
 {
 	Console.Write(".");
 	Thread.Sleep(1000);
 }
-while (KinectSensor.KinectSensors.FirstOrDefault()?.Status != KinectStatus.Connected);
 
 using var sensor = KinectSensor.KinectSensors[0];
 Console.WriteLine("\nFound sensor!");
@@ -67,8 +66,6 @@ while (true)
 	Console.ReadLine();
 
 
-
-
 // Process method
 void Process(DepthImagePixel[] input, byte[] output)
 {
@@ -81,8 +78,8 @@ void Process(DepthImagePixel[] input, byte[] output)
 		{
 			// Process the input
 			var result = 0;
-			result += pixel.Depth < 3250 ? 1 : 0;
-			result += pixel.Depth < 2000 ? 1 : 0;
+			result += pixel.Depth < 1500 ? 1 : 0;
+			result += pixel.Depth < 750 ? 1 : 0;
 
 			output[y * squareDimensions.X + x] = (byte)(pixel.IsKnownDepth ? result : 0);
 		}
