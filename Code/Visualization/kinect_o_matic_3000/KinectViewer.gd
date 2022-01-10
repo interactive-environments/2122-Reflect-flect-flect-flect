@@ -18,13 +18,12 @@ func _draw() -> void:
 		Color(1.0, 1.0, 1.0)
 	]
 	
-	var s := 4
-	
-	for y in range(0, KinectHandler.height * KinectHandler.square_size, s):
-		for x in range(0, KinectHandler.width * KinectHandler.square_size, s):
+	for y in range(KinectHandler.height):
+		for x in range(KinectHandler.width):
 			var pixel: int = KinectHandler.get_pixel(x, y)
+			
 			if pixel != 0:
-				draw_rect(Rect2(x, y, s, s), colors[pixel])
+				draw_rect(Rect2(x, y, 1, 1), colors[pixel])
 
 
 # toggle draw @ CheckBox toggled

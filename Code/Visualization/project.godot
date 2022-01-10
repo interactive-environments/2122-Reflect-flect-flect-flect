@@ -11,11 +11,16 @@ config_version=4
 [application]
 
 config/name="Reflect Visualization"
-run/main_scene="res://main/Main.tscn"
+run/main_scene="res://edit/Edit.tscn"
 
 [autoload]
 
+FileHandler="*res://FileHandler.gd"
 KinectHandler="*res://kinect/KinectHandler.cs"
+
+[debug]
+
+gdscript/warnings/return_value_discarded=false
 
 [display]
 

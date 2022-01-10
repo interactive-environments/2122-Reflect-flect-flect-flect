@@ -21,45 +21,36 @@ func _ready() -> void:
 	var covers := $Cover/Images
 	var content := $Content/Images
 	
-	# get topics from user files
-	var topics := []
-	var dir := Directory.new()
-	dir.open("user://images")
-	dir.list_dir_begin()
-
-	while true:
-		var next := dir.get_next()
-		if next == "":
-			break
-		
-		if not next.begins_with("."):
-			topics.push_back(next)
+	var new_topics: Array = FileHandler.resources["topics"].duplicate()
 	
-	dir.list_dir_end()
+	assert(new_topics.size() != 0)
 	
-	assert(topics.size() != 0)
-	
-	count = topics.size()
+	count = new_topics.size()
 	
 	# create seamless loop
-	topics.push_back(topics[0])
+	new_topics.push_back(new_topics[0])
 	
-	for i in range(topics.size()):
-		var topic: String = topics[i].to_lower()
+	# load all images
+	var i := 0
+	for topic in new_topics:
+		var topic_name: String = topic["name"]
+		var folder := FileHandler.folder_from_topic_name(topic_name)
 		
-		var cover_sprite := _sprite_from_path("user://images/" + topic + "/cover.png")
+		var cover_sprite := Sprite.new()
+		cover_sprite.texture = FileHandler.load_texture(topic_name, "cover")
 		covers.add_child(cover_sprite)
-		cover_sprite.name = topic.capitalize()
+		cover_sprite.name = topic_name.capitalize()
 		cover_sprite.position = Vector2(1200 * i, 0)
 		cover_sprite.centered = false
 		
-		var content_sprite := _sprite_from_path("user://images/" + topic + "/content.png")
+		var content_sprite := Sprite.new()
+		content_sprite.texture = FileHandler.load_texture(topic_name, "content")
 		content.add_child(content_sprite)
-		cover_sprite.name = topic.capitalize()
+		cover_sprite.name = topic_name.capitalize()
 		content_sprite.position = Vector2(1200 * i, 0)
 		content_sprite.centered = false
-	
-	topics.resize(topics.size() - 1)
+		
+		i += 1
 
 
 # -
@@ -113,17 +104,3 @@ func go_right() -> void:
 func reset_squares() -> void:
 	for square in $MainViewport/Viewport/Grid.get_children():
 		square.reset()
-
-
-# creates a sprite from an image path
-func _sprite_from_path(path: String) -> Sprite:
-	var image := Image.new()
-	image.load(path)
-	
-	var texture := ImageTexture.new()
-	texture.create_from_image(image)
-	
-	var sprite := Sprite.new()
-	sprite.texture = texture
-	
-	return sprite

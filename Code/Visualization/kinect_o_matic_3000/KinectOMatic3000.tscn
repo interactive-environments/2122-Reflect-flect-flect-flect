@@ -35,7 +35,8 @@ __meta__ = {
 }
 
 [node name="KinectViewer" type="Node2D" parent="DebugOMatic3000"]
-scale = Vector2( 2, 2 )
+position = Vector2( 170, 117 )
+scale = Vector2( 15, 15 )
 script = ExtResource( 1 )
 
 [node name="KinectLabel" type="Label" parent="DebugOMatic3000"]

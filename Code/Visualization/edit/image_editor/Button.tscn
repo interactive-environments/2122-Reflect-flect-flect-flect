@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://edit/image_editor/Button.gd" type="Script" id=1]
+
+[node name="Button" type="Button"]
+show_behind_parent = true
+margin_right = 50.0
+margin_bottom = 50.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+centered = false
+region_enabled = true

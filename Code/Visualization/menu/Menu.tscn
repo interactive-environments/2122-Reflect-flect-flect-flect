@@ -136,4 +136,4 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene = "res://kinect_o_matic_3000/KinectOMatic3000.tscn"
+scene = "res://edit/Edit.tscn"

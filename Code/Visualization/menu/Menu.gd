@@ -4,17 +4,25 @@ extends Node2D
 var active := true
 
 
+signal changing_scene
+
+
+# -
+func _ready() -> void:
+	visible = true
+
+
 # -
 func _process(_delta: float) -> void:
-	if active:
-		if get_local_mouse_position().x > 400:
-			active = false
-	else:
-		if get_local_mouse_position().x < 300:
-			active = true
-	
-	for button in get_children():
-		button.active = active
+	if Input.is_action_just_pressed("control"):
+		active = not active
+		
+		for button in get_children():
+			button.active = active
+
+
+func handle_switch() -> void:
+	emit_signal("changing_scene")
 
 
 # -

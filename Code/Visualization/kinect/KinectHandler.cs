@@ -6,20 +6,20 @@ public class KinectHandler : Node2D
 	private MemoryMappedFile file;
 	private MemoryMappedViewAccessor fileReadWrite;
 	
-	private Dimensions squareDimensions = new Dimensions { X = 640, Y = 480 };
+	public int width = 64;
+	public int height = 53;
 	
 	public bool opened = false;
 	
 	public int square_size = 1;
-	public int width => squareDimensions.X;
-	public int height => squareDimensions.Y;
 
-	private byte[] imageData;
-	
+	public byte[] imageData;
+
+
 	public override void _Ready()
 	{
 		// Initialize empty array
-		imageData = new byte[squareDimensions.Count];
+		imageData = new byte[width * height];
 		
 		// Load file, open read-write
 		try
@@ -42,30 +42,21 @@ public class KinectHandler : Node2D
 			return;
 		
 		// Write file to raw bytes
-		fileReadWrite.ReadArray(0, imageData, 0, squareDimensions.Count);
-		
-		Update();
+		fileReadWrite.ReadArray(0, imageData, 0, width * height);
 	}
-	
+
+
 	public int get_pixel(int x, int y)
 	{
 		try
 		{
-			return imageData[squareDimensions.X * (y / square_size) + (x / square_size)];
+			return imageData[width * y + x];
 		}
 		catch (System.Exception)
 		{
 			GD.Print($"Cannot access pixel at ({x}, {y})!");
 		}
 
-		return 2;
+		return 0;
 	}
-}
-
-
-// Utility struct
-struct Dimensions
-{
-	public int X, Y;
-	public int Count => X * Y;
 }

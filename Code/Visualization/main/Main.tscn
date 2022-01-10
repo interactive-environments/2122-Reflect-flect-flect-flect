@@ -7,7 +7,7 @@
 [ext_resource path="res://main/grid/arrow/arrow_right.png" type="Texture" id=6]
 [ext_resource path="res://main/grid/Images.gd" type="Script" id=7]
 [ext_resource path="res://main/grid/arrow/arrow_left.png" type="Texture" id=8]
-[ext_resource path="res://Embodiment.gd" type="Script" id=9]
+[ext_resource path="res://main/Embodiment.gd" type="Script" id=9]
 [ext_resource path="res://main/grid/square/square.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=18]

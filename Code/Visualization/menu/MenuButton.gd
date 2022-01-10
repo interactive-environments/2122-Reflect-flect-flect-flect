@@ -7,7 +7,7 @@ export(String, FILE, "*.tscn") var scene: String
 onready var start_position := rect_position
 onready var start_size := rect_size
 
-var active := false
+var active := true
 
 
 # -
@@ -22,4 +22,6 @@ func _process(_delta: float) -> void:
 
 # -
 func _pressed() -> void:
+	get_parent().handle_switch()
+	
 	get_tree().change_scene(scene)

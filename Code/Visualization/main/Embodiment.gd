@@ -14,6 +14,7 @@ var left_prev_switch := false
 var right_prev_switch := false
 
 
+# -
 func _ready() -> void:
 	left_animation.play("LeftAnimation")
 	left_animation.stop(false)
@@ -22,11 +23,11 @@ func _ready() -> void:
 	right_animation.stop(true)
 
 
-
+# -
 func _process(delta: float) -> void:
 	# get left and right pressed
-	left_pressed = (KinectHandler.get_pixel(10, 0) == 2)
-	right_pressed = (KinectHandler.get_pixel(630, 0) == 2)
+	left_pressed = (KinectHandler.get_pixel(0, 0) == 2)
+	right_pressed = (KinectHandler.get_pixel(52, 0) == 2)
 	
 	if left_pressed and right_pressed:
 		left_pressed = false
