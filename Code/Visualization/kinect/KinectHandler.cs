@@ -6,8 +6,8 @@ public class KinectHandler : Node2D
 	private MemoryMappedFile file;
 	private MemoryMappedViewAccessor fileReadWrite;
 	
-	public int width = 64;
-	public int height = 53;
+	public int width = 640;
+	public int height = 480;
 	
 	public bool opened = false;
 	

@@ -21,8 +21,8 @@ func _ready() -> void:
 # -
 func _process(_delta: float) -> void:
 	# get the pixel at the element's position
-	var pos: Vector2 = (start_position + get_parent().position) * (53.0 / 1000)
-	var pixel: int = KinectHandler.get_pixel(max(int(pos.x+1), 0), max(int(pos.y), 0))
+	var pos: Vector2 = (start_position + get_parent().position) * (480.0 / 1000)
+	var pixel: int = KinectHandler.get_pixel(max(int(pos.x + 50), 0), max(int(pos.y), 0))
 	
 	var scale := rect_scale.x
 	var target_scale := 1.0

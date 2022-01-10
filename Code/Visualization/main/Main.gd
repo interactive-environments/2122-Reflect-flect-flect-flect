@@ -30,12 +30,14 @@ func _ready() -> void:
 	# create seamless loop
 	new_topics.push_back(new_topics[0])
 	
+	var sound_topics := []
+	
 	# load all images
 	var i := 0
 	for topic in new_topics:
 		var topic_name: String = topic["name"]
-		var folder := FileHandler.folder_from_topic_name(topic_name)
 		
+		# load sprites
 		var cover_sprite := Sprite.new()
 		cover_sprite.texture = FileHandler.load_texture(topic_name, "cover")
 		covers.add_child(cover_sprite)
@@ -50,7 +52,16 @@ func _ready() -> void:
 		content_sprite.position = Vector2(1200 * i, 0)
 		content_sprite.centered = false
 		
+		if i != new_topics.size() - 1:
+			var streams := FileHandler.load_streams(topic_name)
+			sound_topics.push_back(streams)
+		
 		i += 1
+	
+	# initialize audio
+	for square in $MainViewport/Viewport/Grid.get_children():
+		square.get_node("Sounds").load_streams(sound_topics)
+	pass
 
 
 # -

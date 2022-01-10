@@ -71,6 +71,33 @@ func load_texture(topic: String, type: String) -> Texture:
 	return load_texture_from_path(path)
 
 
+# loads streams from folder in file
+func load_streams(topic: String) -> Array:
+	var streams := []
+	
+	var audio_loader := AudioLoader.new()
+	
+	# get sounds path
+	var path := folder_from_topic_name(topic) + "sounds/"
+	
+	# open directory
+	var directory := Directory.new()
+	if directory.open(path) == OK:
+		# list directory content
+		directory.list_dir_begin(true)
+		
+		var file_name := directory.get_next()
+		while file_name != "":
+			streams.push_back(audio_loader.load_wav(path + file_name))
+			
+			file_name = directory.get_next()
+		
+		# end listing
+		directory.list_dir_end()
+	
+	return streams
+
+
 func load_texture_from_path(path: String) -> Texture:
 	var image := Image.new()
 	image.load(path)

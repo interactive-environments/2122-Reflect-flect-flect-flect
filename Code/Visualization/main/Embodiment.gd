@@ -26,8 +26,8 @@ func _ready() -> void:
 # -
 func _process(delta: float) -> void:
 	# get left and right pressed
-	left_pressed = (KinectHandler.get_pixel(0, 0) == 2)
-	right_pressed = (KinectHandler.get_pixel(52, 0) == 2)
+	left_pressed = (KinectHandler.get_pixel(10, 0) == 2)
+	right_pressed = (KinectHandler.get_pixel(630, 0) == 2)
 	
 	if left_pressed and right_pressed:
 		left_pressed = false

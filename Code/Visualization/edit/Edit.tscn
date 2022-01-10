@@ -253,7 +253,6 @@ __meta__ = {
 }
 
 [node name="InitPanel" type="Panel" parent="Editor"]
-visible = false
 margin_right = 1200.0
 margin_bottom = 1000.0
 custom_styles/panel = SubResource( 4 )
@@ -267,9 +266,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -870.0
-margin_top = -877.0
-margin_right = 336.0
+margin_left = -845.0
+margin_top = -875.0
+margin_right = 361.0
+margin_bottom = -36.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -282,7 +282,7 @@ anchor_right = 1.0
 margin_top = 16.0
 margin_bottom = 110.0
 custom_fonts/font = SubResource( 5 )
-text = "Select a template"
+text = "Select a template:"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
