@@ -1,0 +1,14 @@
+{
+"content": {
+"images": {
+"Button": "user://data/4204663500/images/Content decorative F1.png"
+},
+"template": 2
+},
+"cover": {
+"images": {
+"Button": "user://data/4204663500/images/Cover decorative F1.png"
+},
+"template": 2
+}
+}

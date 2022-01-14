@@ -12,6 +12,10 @@ var templates := [
 		"image": preload("res://edit/templates/spr_template_1.png"),
 		"template": preload("res://edit/templates/Template1.tscn"),
 	},
+	{
+		"image": preload("res://edit/templates/spr_template_2.png"),
+		"template": preload("res://edit/templates/Template2.tscn")
+	}
 ]
 
 
@@ -26,7 +30,7 @@ func create_topic() -> String:
 	var valid := false
 	while not valid:
 		new_id = randi()
-		new_folder = "user://images/" + str(new_id) + "/"
+		new_folder = "user://data/" + str(new_id) + "/"
 		
 		valid = not directory.dir_exists(new_folder)
 	
@@ -44,9 +48,9 @@ func create_topic() -> String:
 	)
 	
 	# copy contents from default topic
-	directory.copy("user://default_topic/re.flect", new_folder + "re.flect")
-	directory.copy("user://default_topic/cover.png", new_folder + "cover.png")
-	directory.copy("user://default_topic/content.png", new_folder + "content.png")
+	directory.copy("user://data/__init/re.flect", new_folder + "re.flect")
+	directory.copy("user://data/__init/cover.png", new_folder + "cover.png")
+	directory.copy("user://data/__init/content.png", new_folder + "content.png")
 	
 	return topic
 
@@ -98,9 +102,13 @@ func load_streams(topic: String) -> Array:
 	return streams
 
 
+# loads the image texture from the specified path
 func load_texture_from_path(path: String) -> Texture:
+	# load the image from the path
 	var image := Image.new()
 	image.load(path)
+	
+	# create the texture from the image
 	var texture := ImageTexture.new()
 	texture.create_from_image(image)
 	
@@ -111,9 +119,11 @@ func load_texture_from_path(path: String) -> Texture:
 func save_texture(texture: Texture, topic: String, type: String) -> void:
 	var path := folder_from_topic_name(topic) + type + ".png"
 	
+	# try to remove the old file
 	var dir := Directory.new()
 	dir.remove(path)
 	
+	# save the texture to the path
 	var data := texture.get_data()
 	data.save_png(path)
 
@@ -121,13 +131,13 @@ func save_texture(texture: Texture, topic: String, type: String) -> void:
 # -
 func _ready() -> void:
 	# load resources from file
-	resources = load_from_file("user://images/re.flect")
+	resources = load_from_file("user://data/re.flect")
 
 
 # -
 func _exit_tree() -> void:
 	# save resources to file
-	save_to_file(resources, "user://images/re.flect")
+	save_to_file(resources, "user://data/re.flect")
 
 
 # loads a dictionary from the specified file path

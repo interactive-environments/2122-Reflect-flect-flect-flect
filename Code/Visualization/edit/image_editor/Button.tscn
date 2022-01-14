@@ -3,6 +3,7 @@
 [ext_resource path="res://edit/image_editor/Button.gd" type="Script" id=1]
 
 [node name="Button" type="Button"]
+self_modulate = Color( 0, 0, 0, 1 )
 show_behind_parent = true
 margin_right = 50.0
 margin_bottom = 50.0

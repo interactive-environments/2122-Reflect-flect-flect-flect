@@ -17,20 +17,23 @@ func _ready() -> void:
 
 # initializes the pressed button @ Button pressed
 func _on_Button_pressed(button: TextureButton) -> void:
-	init_button(button)
+	init_button(null if current_button == button else button)
 
 
 # initializes a button
 func init_button(button: TextureButton) -> void:
+	if current_button:
+		current_button.modulate = Color.white
+	
 	current_button = button
 	
 	if not button:
 		$TitleLabel.text = "No image selected"
-		$FolderLabel.text = "-"
+		$FolderLabel.text = "Select an image to continue"
 		
 		$EditButton.visible = false
 		
-		$Sprite.visible = false
+		$Sprite.modulate = Color.black
 		return
 	
 	$TitleLabel.text = button.topic + " - " + button.type.capitalize()
@@ -39,8 +42,13 @@ func init_button(button: TextureButton) -> void:
 	$EditButton.visible = true
 	
 	var texture := button.texture_normal
-	$Sprite.visible = true
+	$Sprite.modulate = Color.white
 	$Sprite.texture = texture
+
+
+func _process(_delta: float) -> void:
+	if current_button:
+		current_button.modulate = Color.white if ((OS.get_ticks_msec() % 700) < 350) else Color.silver
 
 
 # initialize editor @ EditButton pressed

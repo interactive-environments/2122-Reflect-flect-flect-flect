@@ -5,12 +5,12 @@ onready var preview_panel: Panel
 
 const default_image_link := "user://default_image.png"
 
-var current_button: Button
+var current_image_button: TextureButton
 
 
 # initializes the template
 func initialize(data: Dictionary) -> void:
-	current_button = null
+	current_image_button = null
 	
 	# initialize children
 	for child in get_children():
@@ -23,17 +23,28 @@ func initialize(data: Dictionary) -> void:
 
 # selects the pressed button @ Button pressed
 func _on_Button_pressed(button: Button) -> void:
-	current_button = button
+	if not current_image_button:
+		return
+	
+	button.initialize(current_image_button.path)
+	
+	fit()
 
 
 # selects the image path for the pressed button
-func select(path: String) -> void:
-	if not current_button:
-		return
+func select(button: TextureButton) -> void:
+	print("selected ", button)
 	
-	current_button.initialize(path)
+	if current_image_button:
+		current_image_button.modulate = Color.white
 	
-	fit()
+	current_image_button = null if current_image_button == button else button
+
+
+# -
+func _process(_delta: float) -> void:
+	if current_image_button:
+		current_image_button.modulate = Color.white if ((OS.get_ticks_msec() % 700) < 350) else Color.silver
 
 
 # fits all images to the buttons that have them

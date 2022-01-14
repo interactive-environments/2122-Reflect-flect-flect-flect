@@ -26,19 +26,28 @@ func save_to_file() -> void:
 	FileHandler.save_texture(content_button.texture_normal, topic, "content")
 
 
+# changes the name of the topic @ Title text_changed
 func _on_Title_text_changed(new_text: String) -> void:
+	# get entry in resources
+	var topic_dict: Dictionary
 	for t in FileHandler.resources["topics"]:
 		if t["name"] == topic:
-			t["name"] = new_text
-			
-			topic = new_text
-			
-			cover_button.topic = new_text
-			content_button.topic = new_text
-			
-			return
+			topic_dict = t
+	
+	# update entry
+	topic_dict["name"] = new_text
+	
+	# update topic
+	topic = new_text
+	
+	# update button topics
+	cover_button.topic = new_text
+	content_button.topic = new_text
+	
+	return
 
 
+# deletes the topic @ DeleteButton pressed
 func _on_DeleteButton_pressed() -> void:
 	# delete files
 	FileHandler.delete_topic(topic)
@@ -54,8 +63,11 @@ func _on_DeleteButton_pressed() -> void:
 	queue_free()
 
 
+# reveal the topic folder @ RevealButton pressed
 func _on_RevealButton_pressed() -> void:
+	# get folder
 	var folder := FileHandler.folder_from_topic_name(topic)
 	var abs_folder := ProjectSettings.globalize_path(folder)
 	
+	# open
 	OS.shell_open(abs_folder)

@@ -1,0 +1,14 @@
+{
+"content": {
+"images": {
+"Button": "user://data/2668139190/images/Content spinoza F1.png"
+},
+"template": 2
+},
+"cover": {
+"images": {
+"Button": "user://data/2668139190/images/Cover spinoza F1.png"
+},
+"template": 2
+}
+}

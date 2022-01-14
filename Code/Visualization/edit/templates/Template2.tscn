@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://edit/image_editor/Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://edit/image_editor/Template.gd" type="Script" id=2]
+[ext_resource path="res://edit/templates/spr_template_2.png" type="Texture" id=3]
+
+[node name="Template" type="TextureRect"]
+self_modulate = Color( 0, 0, 0, 0 )
+margin_right = 1200.0
+margin_bottom = 1000.0
+texture = ExtResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" parent="." instance=ExtResource( 1 )]
+margin_right = 1200.0
+margin_bottom = 1000.0

@@ -6,6 +6,8 @@ onready var editor: Panel = get_parent()
 
 # -
 func _ready() -> void:
+	visible = false
+	
 	var i := 0
 	
 	for t in FileHandler.templates:

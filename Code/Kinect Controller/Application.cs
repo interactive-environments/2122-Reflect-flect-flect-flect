@@ -22,26 +22,22 @@ while (KinectSensor.KinectSensors.FirstOrDefault()?.Status != KinectStatus.Conne
 	Thread.Sleep(1000);
 }
 
+// Start the sensor
 using var sensor = KinectSensor.KinectSensors[0];
 Console.WriteLine("\nFound sensor!");
+sensor.DepthStream.Enable();
+sensor.ColorStream.Enable();
 
-// Start the depth stream
-sensor.DepthStream.Enable(DepthImageFormat.Resolution640x480Fps30);
-
-// Define dimensions
-var pixelDimensions = new Dimensions { X = 640, Y = 480 };
-var squareSize = 1;
-var squareDimensions = new Dimensions { X = 640, Y = 480 };
-
-// Define data arrays
-var inputData = new DepthImagePixel[pixelDimensions.Count];
-var outputData = new byte[pixelDimensions.Count];
+// Set up arrays
+var dimensions = new { X = 640, Y = 480, Count = 640 * 480 };
+var inputData = new DepthImagePixel[dimensions.Count];
+var outputData = new byte[dimensions.Count];
 
 // Set up memory-mapped file
-using var file = MemoryMappedFile.CreateOrOpen("KinectImage", squareDimensions.Count);
+using var file = MemoryMappedFile.CreateOrOpen("KinectImage", dimensions.Count);
 using var fileReadWrite = file.CreateViewAccessor();
 
-// Create depth frame callback
+// Register depth frame callback
 sensor.DepthFrameReady += (_, args) =>
 {
 	// Receive the incoming frame
@@ -50,60 +46,37 @@ sensor.DepthFrameReady += (_, args) =>
 	// Get depth data from frame
 	frame.CopyDepthImagePixelDataTo(inputData);
 
-	// Process the depth data
-	Process(inputData, outputData);
+	// Process into output data
+	Parallel.ForEach(inputData, (pixel, _, index) =>
+		outputData[index] = !pixel.IsKnownDepth ? (byte)0 :
+			(pixel.Depth > 1200 ? (pixel.Depth > 1800 ? (byte)0 : (byte)1) : (byte)2)
+	);
 
-	// Write raw bytes to file
-	fileReadWrite.WriteArray(0, outputData, 0, squareDimensions.Count);
-};
-
-
-sensor.Start();
-
-Console.WriteLine("Started sensor!");
-
-while (true)
-	Console.ReadLine();
-
-
-// Process method
-void Process(DepthImagePixel[] input, byte[] output)
-{
-	Parallel.ForEach(input, (pixel, _, index) =>
+    // Fill in columns
+    Parallel.For(0, dimensions.X - 1, x =>
 	{
-		long x = index % pixelDimensions.X, y = index / pixelDimensions.X;
-		
-		// Downscale to square size
-		if (x % squareSize == 0 && y % squareSize == 0)
-		{
-			// Process the input
-			var result = 0;
-			result += pixel.Depth < 1500 ? 1 : 0;
-			result += pixel.Depth < 750 ? 1 : 0;
+		var closePixels = 0;
 
-			output[y * squareDimensions.X + x] = (byte)(pixel.IsKnownDepth ? result : 0);
+		for (var y = 0; y < dimensions.Y; y++)
+		{
+			// Count close pixels in column
+			if (outputData[y * dimensions.X + x] == 2 && closePixels++ > 20)
+			{
+				// Fill column
+				for (var yy = 0; yy < dimensions.Y; yy++)
+					outputData[yy * dimensions.X + x] = 2;
+
+				return;
+			}
 		}
 	});
 
-	Parallel.For(0, squareDimensions.X - 1, x =>
-	{
-		// Get pixels that are close
-		var closePixels = 0;
-		for (int y = 0; y < squareDimensions.Y; y++)
-			if (output[y * squareDimensions.X + x] == (byte)2)
-				closePixels++;
+	// Write raw bytes to file
+	fileReadWrite.WriteArray(0, outputData, 0, dimensions.Count);
+};
 
-		// Fill pixel column if enough pixels are close
-		if (closePixels > 20)
-			for (int y = 0; y < squareDimensions.Y; y++)
-				output[y * squareDimensions.X + x] = (byte)2;
-	});
-}
+sensor.Start();
+Console.WriteLine("Started sensor!");
 
 
-// Utility struct
-struct Dimensions
-{
-	public int X, Y;
-	public int Count => X * Y;
-}
+while (true) { }
