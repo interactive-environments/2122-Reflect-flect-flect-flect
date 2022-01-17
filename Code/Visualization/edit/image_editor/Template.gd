@@ -3,7 +3,7 @@ extends Control
 
 onready var preview_panel: Panel
 
-const default_image_link := "user://default_image.png"
+const default_image_link := "user://data/default_image.png"
 
 var current_image_button: TextureButton
 
@@ -23,10 +23,9 @@ func initialize(data: Dictionary) -> void:
 
 # selects the pressed button @ Button pressed
 func _on_Button_pressed(button: Button) -> void:
-	if not current_image_button:
-		return
+	var path: String = current_image_button.path if current_image_button else default_image_link
 	
-	button.initialize(current_image_button.path)
+	button.initialize(path)
 	
 	fit()
 
