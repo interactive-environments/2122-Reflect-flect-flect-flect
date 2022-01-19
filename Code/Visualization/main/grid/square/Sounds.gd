@@ -21,7 +21,7 @@ func load_streams(topics: Array) -> void:
 		
 		for stream in streams:
 			var stream_player := AudioStreamPlayer.new()
-			stream_player.volume_db = -25
+			stream_player.volume_db = -40
 			
 			stream_player.stream = stream
 			
