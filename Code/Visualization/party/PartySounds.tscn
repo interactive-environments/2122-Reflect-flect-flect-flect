@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://party/snd_party.wav" type="AudioStream" id=1]
+[ext_resource path="res://party/PartySounds.gd" type="Script" id=2]
+
+[node name="PartySounds" type="Node"]
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -40.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+volume_db = -40.0

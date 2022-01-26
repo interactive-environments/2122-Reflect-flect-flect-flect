@@ -49,7 +49,7 @@ sensor.DepthFrameReady += (_, args) =>
 	// Process into output data
 	Parallel.ForEach(inputData, (pixel, _, index) =>
 		outputData[index] = !pixel.IsKnownDepth ? (byte)0 :
-			(pixel.Depth > 1700 ? (pixel.Depth > 2750 ? (byte)0 : (byte)1) : (byte)2)
+			(pixel.Depth > 1700 ? (pixel.Depth > 2600 ? (byte)0 : (byte)1) : (byte)2)
 	);
 
     // Fill in columns

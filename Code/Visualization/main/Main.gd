@@ -18,6 +18,9 @@ onready var lowpass_effect: AudioEffectLowPassFilter = AudioServer.get_bus_effec
 
 # -
 func _ready() -> void:
+	_load_topics()
+
+func _load_topics() -> void:
 	var covers := $Cover/Images
 	var content := $Content/Images
 	

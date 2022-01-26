@@ -24,6 +24,10 @@ func _process(_delta: float) -> void:
 	var pos: Vector2 = (start_position + get_parent().position) * (480.0 / 1000)
 	var pixel: int = KinectHandler.get_pixel(max(int(pos.x + 50), 0), max(int(pos.y), 0))
 	
+	var mouse_pos := Vector2(get_global_mouse_position().x, 1000 + get_global_mouse_position().y)
+	if Rect2(start_position, start_size).has_point(mouse_pos):
+		pixel = 1
+	
 	var scale := rect_scale.x
 	var target_scale := 1.0
 	

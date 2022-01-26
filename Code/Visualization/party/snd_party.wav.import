@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snd_party.wav-4fc517ee915477297d2a56d1902df85c.sample"
+
+[deps]
+
+source_file="res://party/snd_party.wav"
+dest_files=[ "res://.import/snd_party.wav-4fc517ee915477297d2a56d1902df85c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

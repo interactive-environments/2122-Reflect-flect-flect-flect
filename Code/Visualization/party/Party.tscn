@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://main/Main.tscn" type="PackedScene" id=1]
+[ext_resource path="res://main/grid/grid_shader.gdshader" type="Shader" id=2]
+[ext_resource path="res://party/Party.gd" type="Script" id=3]
+[ext_resource path="res://party/content.png" type="Texture" id=4]
+[ext_resource path="res://party/cover.png" type="Texture" id=5]
+
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath("Content")
+
+[sub_resource type="ViewportTexture" id=2]
+viewport_path = NodePath("Cover")
+
+[sub_resource type="ShaderMaterial" id=3]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/width = 5.0
+shader_param/cover_texture = SubResource( 2 )
+shader_param/content_texture = SubResource( 1 )
+
+[node name="Main" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Cover/Images" index="0"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="Cover/Images" index="1"]
+position = Vector2( 1200, 0 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Sprite" type="Sprite" parent="Content/Images" index="0"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="Content/Images" index="1"]
+position = Vector2( 1200, 0 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="MainViewport" parent="." index="3"]
+material = SubResource( 3 )
+
+[node name="Main" parent="Menu" index="0"]
+disabled = false
+
+[node name="Party" parent="Menu" index="3"]
+disabled = true
+
+[editable path="Menu"]

@@ -29,6 +29,9 @@ func _process(delta: float) -> void:
 	left_pressed = (KinectHandler.get_pixel(10, 0) == 2)
 	right_pressed = (KinectHandler.get_pixel(630, 0) == 2)
 	
+	left_pressed = left_pressed or Input.is_action_pressed("ui_left")
+	right_pressed = right_pressed or Input.is_action_pressed("ui_right")
+	
 	if left_pressed and right_pressed:
 		left_pressed = false
 		right_pressed = false

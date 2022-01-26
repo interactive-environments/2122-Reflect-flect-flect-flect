@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://main/grid/square/audio/glass/tone_1.wav" type="AudioStream" id=1]
 [ext_resource path="res://main/grid/square/Square.gd" type="Script" id=33]
 [ext_resource path="res://main/grid/square/square.png" type="Texture" id=34]
 [ext_resource path="res://main/grid/square/Sounds.gd" type="Script" id=35]
@@ -18,6 +17,3 @@ __meta__ = {
 
 [node name="Sounds" type="Node" parent="."]
 script = ExtResource( 35 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sounds"]
-stream = ExtResource( 1 )
